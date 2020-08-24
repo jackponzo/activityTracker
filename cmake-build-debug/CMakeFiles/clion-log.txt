@@ -1,0 +1,12 @@
+"C:\Program Files\JetBrains\CLion 2019.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "C:\Users\Giacomo Ponzuoli\Desktop\activityTracker"
+CMake Error at CMakeLists.txt:16 (add_subdirectory):
+  The source directory
+
+    C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/test
+
+  does not contain a CMakeLists.txt file.
+
+
+-- Configuring incomplete, errors occurred!
+See also "C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+See also "C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/cmake-build-debug/CMakeFiles/CMakeError.log".

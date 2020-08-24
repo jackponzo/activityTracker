@@ -1,0 +1,3 @@
+C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/test/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/test/cmake-build-debug/CMakeFiles/test.dir
+C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/test/cmake-build-debug/CMakeFiles/edit_cache.dir
