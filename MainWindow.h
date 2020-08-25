@@ -8,6 +8,8 @@
 #include <QMainWindow>
 #include <QtWidgets/QCalendarWidget>
 #include <QtWidgets/QTextBrowser>
+#include <QtWidgets/QPushButton>
+#include <QtWidgets/QLabel>
 
 class MainWindow : public QMainWindow
 {
@@ -19,6 +21,8 @@ public:
 
 
 private:
-
+    QCalendarWidget *calendar;
+    QPushButton *buttonNewActivity;
+    QLabel *labelActivityTracker;
 };
 #endif // MAINWINDOW_H

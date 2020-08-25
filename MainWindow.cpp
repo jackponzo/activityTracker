@@ -9,15 +9,43 @@
 #include <QtWidgets/QDateTimeEdit>
 #include <QtWidgets/QSpinBox>
 #include <QtGui/QTextTableCell>
+#include <QtWidgets/QPushButton>
 
 #include "MainWindow.h"
 
 MainWindow::MainWindow(QWidget *parent)
         : QMainWindow(parent)
 {
+    this->setFixedSize(600,600); //non posso modificare la grandezza della finestra
+
+    //label "Activity Tracker"
+    labelActivityTracker = new QLabel("Activity Tracker",this);
+    labelActivityTracker->setFixedWidth(400);
+
+    QFont font("Arial", 15, QFont::Bold);
+    labelActivityTracker->setFont(font);
+    labelActivityTracker->move(200,40);
+    labelActivityTracker->setStyleSheet("* { color:red }");
+
+    //calendario
+    calendar = new QCalendarWidget(this);
+    calendar->resize(400,400);
+    calendar->move(100,100);
+    calendar->setGridVisible(true);
+
+    //bottone "nuova attivita'"
+    buttonNewActivity = new QPushButton("New Activity", this);
+    buttonNewActivity->move(400,520);
+
+
+
+
 }
 
 MainWindow::~MainWindow()
 {
+    delete calendar;
+    delete buttonNewActivity;
+    delete labelActivityTracker;
 }
 
