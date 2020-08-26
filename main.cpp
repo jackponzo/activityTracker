@@ -1,6 +1,4 @@
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QPushButton>
-#include <QtWidgets/QCalendarWidget>
 
 #include "MainWindow.h"
 

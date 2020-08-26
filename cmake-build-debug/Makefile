@@ -358,6 +358,33 @@ MainWindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\activityTracker.dir\build.make CMakeFiles/activityTracker.dir/MainWindow.cpp.s
 .PHONY : MainWindow.cpp.s
 
+NewActivityWindow.obj: NewActivityWindow.cpp.obj
+
+.PHONY : NewActivityWindow.obj
+
+# target to build an object file
+NewActivityWindow.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\activityTracker.dir\build.make CMakeFiles/activityTracker.dir/NewActivityWindow.cpp.obj
+.PHONY : NewActivityWindow.cpp.obj
+
+NewActivityWindow.i: NewActivityWindow.cpp.i
+
+.PHONY : NewActivityWindow.i
+
+# target to preprocess a source file
+NewActivityWindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\activityTracker.dir\build.make CMakeFiles/activityTracker.dir/NewActivityWindow.cpp.i
+.PHONY : NewActivityWindow.cpp.i
+
+NewActivityWindow.s: NewActivityWindow.cpp.s
+
+.PHONY : NewActivityWindow.s
+
+# target to generate assembly for a file
+NewActivityWindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\activityTracker.dir\build.make CMakeFiles/activityTracker.dir/NewActivityWindow.cpp.s
+.PHONY : NewActivityWindow.cpp.s
+
 activityTracker_autogen/mocs_compilation.obj: activityTracker_autogen/mocs_compilation.cpp.obj
 
 .PHONY : activityTracker_autogen/mocs_compilation.obj
@@ -439,6 +466,9 @@ help:
 	@echo ... MainWindow.obj
 	@echo ... MainWindow.i
 	@echo ... MainWindow.s
+	@echo ... NewActivityWindow.obj
+	@echo ... NewActivityWindow.i
+	@echo ... NewActivityWindow.s
 	@echo ... activityTracker_autogen/mocs_compilation.obj
 	@echo ... activityTracker_autogen/mocs_compilation.i
 	@echo ... activityTracker_autogen/mocs_compilation.s

@@ -19,7 +19,7 @@ add_subdirectory(test)
 #add_library(core ${SOURCE_FILES})
 
 # Tell CMake to create the helloworld executable
-add_executable(activityTracker main.cpp MainWindow.cpp MainWindow.h MainWindow.cpp MainWindow.h)
+add_executable(activityTracker main.cpp MainWindow.cpp MainWindow.h MainWindow.cpp MainWindow.h NewActivityWindow.cpp NewActivityWindow.h)
 
 # Use the Widgets module from Qt 5.
 target_link_libraries(activityTracker Qt5::Widgets)

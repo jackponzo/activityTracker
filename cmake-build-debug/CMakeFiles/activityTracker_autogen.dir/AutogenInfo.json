@@ -13,6 +13,11 @@
 			"C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/MainWindow.h",
 			"Mu",
 			"EWIEGA46WW/moc_MainWindow.cpp"
+		],
+		[
+			"C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/NewActivityWindow.h",
+			"Mu",
+			"EWIEGA46WW/moc_NewActivityWindow.cpp"
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -63,6 +68,10 @@
 	[
 		[
 			"C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/MainWindow.cpp",
+			"Mu"
+		],
+		[
+			"C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/NewActivityWindow.cpp",
 			"Mu"
 		],
 		[ "C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/main.cpp", "Mu" ]

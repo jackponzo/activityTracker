@@ -10,11 +10,14 @@
 #include <QtWidgets/QSpinBox>
 #include <QtGui/QTextTableCell>
 #include <QtWidgets/QPushButton>
+#include <iostream>
+
 
 #include "MainWindow.h"
+#include "NewActivityWindow.h"
 
-MainWindow::MainWindow(QWidget *parent)
-        : QMainWindow(parent)
+
+MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
 {
     this->setFixedSize(600,600); //non posso modificare la grandezza della finestra
 
@@ -36,6 +39,7 @@ MainWindow::MainWindow(QWidget *parent)
     //bottone "nuova attivita'"
     buttonNewActivity = new QPushButton("New Activity", this);
     buttonNewActivity->move(400,520);
+    connect(buttonNewActivity, SIGNAL(clicked()), this, SLOT(clickedNewActivity()));
 
 
 
@@ -47,5 +51,11 @@ MainWindow::~MainWindow()
     delete calendar;
     delete buttonNewActivity;
     delete labelActivityTracker;
+}
+
+void MainWindow::clickedNewActivity() {
+    std::cout << "Window New Activity";
+    NewActivityWindow prova;
+    prova.exec();
 }
 

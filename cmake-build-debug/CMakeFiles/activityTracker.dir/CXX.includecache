@@ -6,18 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../MainWindow.h
-QMainWindow
--
-QtWidgets/QCalendarWidget
--
-QtWidgets/QTextBrowser
--
-QtWidgets/QPushButton
--
-QtWidgets/QLabel
--
-
 C:/Qt/5.9.9/mingw53_32/include/QtCore/qabstractitemmodel.h
 QtCore/qvariant.h
 -
@@ -1240,6 +1228,10 @@ C:/Qt/5.9.9/mingw53_32/include/QtWidgets/QDateTimeEdit
 qdatetimeedit.h
 C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qdatetimeedit.h
 
+C:/Qt/5.9.9/mingw53_32/include/QtWidgets/QDialog
+qdialog.h
+C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qdialog.h
+
 C:/Qt/5.9.9/mingw53_32/include/QtWidgets/QGridLayout
 qgridlayout.h
 C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qgridlayout.h
@@ -1363,6 +1355,12 @@ QtWidgets/qabstractspinbox.h
 -
 
 C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qdesktopwidget.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtWidgets/qwidget.h
+-
+
+C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qdialog.h
 QtWidgets/qtwidgetsglobal.h
 -
 QtWidgets/qwidget.h
@@ -1599,11 +1597,17 @@ QtGui/QTextTableCell
 -
 QtWidgets/QPushButton
 -
+iostream
+-
 MainWindow.h
 C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/MainWindow.h
+NewActivityWindow.h
+C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/NewActivityWindow.h
 
 C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/MainWindow.h
 QMainWindow
+-
+QtWidgets/QApplication
 -
 QtWidgets/QCalendarWidget
 -
@@ -1614,25 +1618,7 @@ QtWidgets/QPushButton
 QtWidgets/QLabel
 -
 
-C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/cmake-build-debug/activityTracker_autogen/EWIEGA46WW/moc_MainWindow.cpp
-MainWindow.h
-C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/cmake-build-debug/activityTracker_autogen/EWIEGA46WW/MainWindow.h
-QtCore/qbytearray.h
+C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/NewActivityWindow.h
+QtWidgets/QDialog
 -
-QtCore/qmetatype.h
--
-
-C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/cmake-build-debug/activityTracker_autogen/mocs_compilation.cpp
-EWIEGA46WW/moc_MainWindow.cpp
-C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/cmake-build-debug/activityTracker_autogen/EWIEGA46WW/moc_MainWindow.cpp
-
-C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/main.cpp
-QtWidgets/QApplication
--
-QtWidgets/QPushButton
--
-QtWidgets/QCalendarWidget
--
-MainWindow.h
-C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/MainWindow.h
 
