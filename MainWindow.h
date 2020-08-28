@@ -27,5 +27,6 @@ private:
     QCalendarWidget *calendar;
     QPushButton *buttonNewActivity;
     QLabel *labelActivityTracker;
+
 };
 #endif // MAINWINDOW_H

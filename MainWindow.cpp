@@ -7,7 +7,6 @@
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QComboBox>
 #include <QtWidgets/QDateTimeEdit>
-#include <QtWidgets/QSpinBox>
 #include <QtGui/QTextTableCell>
 #include <QtWidgets/QPushButton>
 #include <iostream>
@@ -38,6 +37,9 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
 
     //bottone "nuova attivita'"
     buttonNewActivity = new QPushButton("New Activity", this);
+
+    QFont fontButtonNewActivity("Arial", 10);
+    buttonNewActivity->setFont(fontButtonNewActivity);
     buttonNewActivity->move(400,520);
     connect(buttonNewActivity, SIGNAL(clicked()), this, SLOT(clickedNewActivity()));
 
@@ -54,8 +56,9 @@ MainWindow::~MainWindow()
 }
 
 void MainWindow::clickedNewActivity() {
-    std::cout << "Window New Activity";
-    NewActivityWindow prova;
-    prova.exec();
+    NewActivityWindow newActivityWindow;
+    newActivityWindow.setWindowTitle("New Activity");
+    newActivityWindow.setWindowIcon(QIcon("../image/iconNewActivityWindow.png"));
+    newActivityWindow.exec();
 }
 
