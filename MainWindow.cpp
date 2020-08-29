@@ -2,19 +2,9 @@
 // Created by Giacomo Ponzuoli on 24/08/2020.
 //
 
-#include <QtWidgets/QGridLayout>
-#include <QtGui/QTextCharFormat>
-#include <QtWidgets/QLabel>
-#include <QtWidgets/QComboBox>
-#include <QtWidgets/QDateTimeEdit>
-#include <QtGui/QTextTableCell>
-#include <QtWidgets/QPushButton>
 #include <iostream>
 
-
 #include "MainWindow.h"
-#include "NewActivityWindow.h"
-
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
 {
@@ -34,6 +24,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
     calendar->resize(400,400);
     calendar->move(100,100);
     calendar->setGridVisible(true);
+    connect(calendar, SIGNAL(clicked(QDate)), this, SLOT(clickedListActivity(QDate)));
 
     //bottone "nuova attivita'"
     buttonNewActivity = new QPushButton("New Activity", this);
@@ -42,9 +33,6 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
     buttonNewActivity->setFont(fontButtonNewActivity);
     buttonNewActivity->move(400,520);
     connect(buttonNewActivity, SIGNAL(clicked()), this, SLOT(clickedNewActivity()));
-
-
-
 
 }
 
@@ -62,3 +50,12 @@ void MainWindow::clickedNewActivity() {
     newActivityWindow.exec();
 }
 
+void MainWindow::clickedListActivity(QDate date) {
+
+    ListActivityWindow listActivityWindow(nullptr, date);
+    listActivityWindow.setWindowTitle("List Activity");
+    listActivityWindow.setWindowIcon(QIcon("../image/listActivityWindow.png"));
+
+    listActivityWindow.exec();
+
+}

@@ -464,6 +464,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/ListActivityWindow.cpp">
+			<Option target="activityTracker"/>
+		</Unit>
+		<Unit filename="C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/ListActivityWindow.h">
+			<Option target="activityTracker"/>
+		</Unit>
 		<Unit filename="C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/MainWindow.cpp">
 			<Option target="activityTracker"/>
 		</Unit>

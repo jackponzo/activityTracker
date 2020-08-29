@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/ListActivityWindow.cpp" "C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/cmake-build-debug/CMakeFiles/activityTracker.dir/ListActivityWindow.cpp.obj"
   "C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/MainWindow.cpp" "C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/cmake-build-debug/CMakeFiles/activityTracker.dir/MainWindow.cpp.obj"
   "C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/NewActivityWindow.cpp" "C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/cmake-build-debug/CMakeFiles/activityTracker.dir/NewActivityWindow.cpp.obj"
   "C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/cmake-build-debug/activityTracker_autogen/mocs_compilation.cpp" "C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/cmake-build-debug/CMakeFiles/activityTracker.dir/activityTracker_autogen/mocs_compilation.cpp.obj"

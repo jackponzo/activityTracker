@@ -8,9 +8,14 @@
 #include <QMainWindow>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QCalendarWidget>
-#include <QtWidgets/QTextBrowser>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QLabel>
+#include <QtWidgets/QDateTimeEdit>
+#include <QtWidgets/QPushButton>
+
+#include "NewActivityWindow.h"
+#include "ListActivityWindow.h"
+
 
 class MainWindow : public QMainWindow
 {
@@ -22,6 +27,7 @@ public:
 
 private slots:
     void clickedNewActivity();
+    void clickedListActivity(QDate date);
 
 private:
     QCalendarWidget *calendar;

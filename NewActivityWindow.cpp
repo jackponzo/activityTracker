@@ -110,7 +110,6 @@ NewActivityWindow::NewActivityWindow(QWidget *parent) : QDialog(parent)
     buttonCancel->setFont(fontButtonCancel);
     buttonCancel->move(370,575);
 
-
 };
 
 NewActivityWindow::~NewActivityWindow(){

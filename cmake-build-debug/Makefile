@@ -331,6 +331,33 @@ gtest_main_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f test\lib\googletest\googletest\CMakeFiles\gtest_main_autogen.dir\build.make test/lib/googletest/googletest/CMakeFiles/gtest_main_autogen.dir/build
 .PHONY : gtest_main_autogen/fast
 
+ListActivityWindow.obj: ListActivityWindow.cpp.obj
+
+.PHONY : ListActivityWindow.obj
+
+# target to build an object file
+ListActivityWindow.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\activityTracker.dir\build.make CMakeFiles/activityTracker.dir/ListActivityWindow.cpp.obj
+.PHONY : ListActivityWindow.cpp.obj
+
+ListActivityWindow.i: ListActivityWindow.cpp.i
+
+.PHONY : ListActivityWindow.i
+
+# target to preprocess a source file
+ListActivityWindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\activityTracker.dir\build.make CMakeFiles/activityTracker.dir/ListActivityWindow.cpp.i
+.PHONY : ListActivityWindow.cpp.i
+
+ListActivityWindow.s: ListActivityWindow.cpp.s
+
+.PHONY : ListActivityWindow.s
+
+# target to generate assembly for a file
+ListActivityWindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\activityTracker.dir\build.make CMakeFiles/activityTracker.dir/ListActivityWindow.cpp.s
+.PHONY : ListActivityWindow.cpp.s
+
 MainWindow.obj: MainWindow.cpp.obj
 
 .PHONY : MainWindow.obj
@@ -463,6 +490,9 @@ help:
 	@echo ... gtest
 	@echo ... gtest_main
 	@echo ... runAllTests
+	@echo ... ListActivityWindow.obj
+	@echo ... ListActivityWindow.i
+	@echo ... ListActivityWindow.s
 	@echo ... MainWindow.obj
 	@echo ... MainWindow.i
 	@echo ... MainWindow.s
