@@ -331,6 +331,60 @@ gtest_main_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f test\lib\googletest\googletest\CMakeFiles\gtest_main_autogen.dir\build.make test/lib/googletest/googletest/CMakeFiles/gtest_main_autogen.dir/build
 .PHONY : gtest_main_autogen/fast
 
+Activities.obj: Activities.cpp.obj
+
+.PHONY : Activities.obj
+
+# target to build an object file
+Activities.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\activityTracker.dir\build.make CMakeFiles/activityTracker.dir/Activities.cpp.obj
+.PHONY : Activities.cpp.obj
+
+Activities.i: Activities.cpp.i
+
+.PHONY : Activities.i
+
+# target to preprocess a source file
+Activities.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\activityTracker.dir\build.make CMakeFiles/activityTracker.dir/Activities.cpp.i
+.PHONY : Activities.cpp.i
+
+Activities.s: Activities.cpp.s
+
+.PHONY : Activities.s
+
+# target to generate assembly for a file
+Activities.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\activityTracker.dir\build.make CMakeFiles/activityTracker.dir/Activities.cpp.s
+.PHONY : Activities.cpp.s
+
+Activity.obj: Activity.cpp.obj
+
+.PHONY : Activity.obj
+
+# target to build an object file
+Activity.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\activityTracker.dir\build.make CMakeFiles/activityTracker.dir/Activity.cpp.obj
+.PHONY : Activity.cpp.obj
+
+Activity.i: Activity.cpp.i
+
+.PHONY : Activity.i
+
+# target to preprocess a source file
+Activity.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\activityTracker.dir\build.make CMakeFiles/activityTracker.dir/Activity.cpp.i
+.PHONY : Activity.cpp.i
+
+Activity.s: Activity.cpp.s
+
+.PHONY : Activity.s
+
+# target to generate assembly for a file
+Activity.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\activityTracker.dir\build.make CMakeFiles/activityTracker.dir/Activity.cpp.s
+.PHONY : Activity.cpp.s
+
 ListActivityWindow.obj: ListActivityWindow.cpp.obj
 
 .PHONY : ListActivityWindow.obj
@@ -490,6 +544,12 @@ help:
 	@echo ... gtest
 	@echo ... gtest_main
 	@echo ... runAllTests
+	@echo ... Activities.obj
+	@echo ... Activities.i
+	@echo ... Activities.s
+	@echo ... Activity.obj
+	@echo ... Activity.i
+	@echo ... Activity.s
 	@echo ... ListActivityWindow.obj
 	@echo ... ListActivityWindow.i
 	@echo ... ListActivityWindow.s

@@ -464,6 +464,18 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/Activities.cpp">
+			<Option target="activityTracker"/>
+		</Unit>
+		<Unit filename="C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/Activities.h">
+			<Option target="activityTracker"/>
+		</Unit>
+		<Unit filename="C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/Activity.cpp">
+			<Option target="activityTracker"/>
+		</Unit>
+		<Unit filename="C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/Activity.h">
+			<Option target="activityTracker"/>
+		</Unit>
 		<Unit filename="C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/ListActivityWindow.cpp">
 			<Option target="activityTracker"/>
 		</Unit>
