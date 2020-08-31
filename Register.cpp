@@ -17,7 +17,7 @@ void Register::addActivity(Activity a) {
 
 void Register::deleteActivity(const Activity ac) {
     for(const auto it : activities){
-        if(it.second == ac)
+        if(it.second == ac && it.first == ac.getDate())
             activities.erase(it.first);
     }
 }

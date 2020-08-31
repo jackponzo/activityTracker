@@ -464,12 +464,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/Activities.cpp">
-			<Option target="activityTracker"/>
-		</Unit>
-		<Unit filename="C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/Activities.h">
-			<Option target="activityTracker"/>
-		</Unit>
 		<Unit filename="C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/Activity.cpp">
 			<Option target="activityTracker"/>
 		</Unit>
@@ -492,6 +486,12 @@
 			<Option target="activityTracker"/>
 		</Unit>
 		<Unit filename="C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/NewActivityWindow.h">
+			<Option target="activityTracker"/>
+		</Unit>
+		<Unit filename="C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/Register.cpp">
+			<Option target="activityTracker"/>
+		</Unit>
+		<Unit filename="C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/Register.h">
 			<Option target="activityTracker"/>
 		</Unit>
 		<Unit filename="C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/cmake-build-debug/activityTracker_autogen/mocs_compilation.cpp">

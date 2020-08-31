@@ -10,11 +10,6 @@
 	"HEADERS" : 
 	[
 		[
-			"C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/Activities.h",
-			"Mu",
-			"EWIEGA46WW/moc_Activities.cpp"
-		],
-		[
 			"C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/Activity.h",
 			"Mu",
 			"EWIEGA46WW/moc_Activity.cpp"
@@ -33,6 +28,11 @@
 			"C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/NewActivityWindow.h",
 			"Mu",
 			"EWIEGA46WW/moc_NewActivityWindow.cpp"
+		],
+		[
+			"C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/Register.h",
+			"Mu",
+			"EWIEGA46WW/moc_Register.cpp"
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -82,10 +82,6 @@
 	"SOURCES" : 
 	[
 		[
-			"C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/Activities.cpp",
-			"Mu"
-		],
-		[
 			"C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/Activity.cpp",
 			"Mu"
 		],
@@ -99,6 +95,10 @@
 		],
 		[
 			"C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/NewActivityWindow.cpp",
+			"Mu"
+		],
+		[
+			"C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/Register.cpp",
 			"Mu"
 		],
 		[ "C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/main.cpp", "Mu" ]

@@ -331,33 +331,6 @@ gtest_main_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f test\lib\googletest\googletest\CMakeFiles\gtest_main_autogen.dir\build.make test/lib/googletest/googletest/CMakeFiles/gtest_main_autogen.dir/build
 .PHONY : gtest_main_autogen/fast
 
-Activities.obj: Activities.cpp.obj
-
-.PHONY : Activities.obj
-
-# target to build an object file
-Activities.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\activityTracker.dir\build.make CMakeFiles/activityTracker.dir/Activities.cpp.obj
-.PHONY : Activities.cpp.obj
-
-Activities.i: Activities.cpp.i
-
-.PHONY : Activities.i
-
-# target to preprocess a source file
-Activities.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\activityTracker.dir\build.make CMakeFiles/activityTracker.dir/Activities.cpp.i
-.PHONY : Activities.cpp.i
-
-Activities.s: Activities.cpp.s
-
-.PHONY : Activities.s
-
-# target to generate assembly for a file
-Activities.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\activityTracker.dir\build.make CMakeFiles/activityTracker.dir/Activities.cpp.s
-.PHONY : Activities.cpp.s
-
 Activity.obj: Activity.cpp.obj
 
 .PHONY : Activity.obj
@@ -466,6 +439,33 @@ NewActivityWindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\activityTracker.dir\build.make CMakeFiles/activityTracker.dir/NewActivityWindow.cpp.s
 .PHONY : NewActivityWindow.cpp.s
 
+Register.obj: Register.cpp.obj
+
+.PHONY : Register.obj
+
+# target to build an object file
+Register.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\activityTracker.dir\build.make CMakeFiles/activityTracker.dir/Register.cpp.obj
+.PHONY : Register.cpp.obj
+
+Register.i: Register.cpp.i
+
+.PHONY : Register.i
+
+# target to preprocess a source file
+Register.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\activityTracker.dir\build.make CMakeFiles/activityTracker.dir/Register.cpp.i
+.PHONY : Register.cpp.i
+
+Register.s: Register.cpp.s
+
+.PHONY : Register.s
+
+# target to generate assembly for a file
+Register.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\activityTracker.dir\build.make CMakeFiles/activityTracker.dir/Register.cpp.s
+.PHONY : Register.cpp.s
+
 activityTracker_autogen/mocs_compilation.obj: activityTracker_autogen/mocs_compilation.cpp.obj
 
 .PHONY : activityTracker_autogen/mocs_compilation.obj
@@ -544,9 +544,6 @@ help:
 	@echo ... gtest
 	@echo ... gtest_main
 	@echo ... runAllTests
-	@echo ... Activities.obj
-	@echo ... Activities.i
-	@echo ... Activities.s
 	@echo ... Activity.obj
 	@echo ... Activity.i
 	@echo ... Activity.s
@@ -559,6 +556,9 @@ help:
 	@echo ... NewActivityWindow.obj
 	@echo ... NewActivityWindow.i
 	@echo ... NewActivityWindow.s
+	@echo ... Register.obj
+	@echo ... Register.i
+	@echo ... Register.s
 	@echo ... activityTracker_autogen/mocs_compilation.obj
 	@echo ... activityTracker_autogen/mocs_compilation.i
 	@echo ... activityTracker_autogen/mocs_compilation.s

@@ -14,6 +14,7 @@
 #include <QtCore/QSignalMapper>
 #include <QtWidgets/QGroupBox>
 
+#include "Register.h"
 
 #include <iostream>
 
@@ -26,10 +27,6 @@ public:
     ~ListActivityWindow();
 
 
-private slots:
-    void prov(int i);
-
-
 private:
     QLabel *labelListActivity;
     QLabel *labelDate;
@@ -37,6 +34,8 @@ private:
     QScrollArea *scrollAreaListActivity;
 
     QWidget *qWidget;
+
+    Register *aRegister;
 };
 
 

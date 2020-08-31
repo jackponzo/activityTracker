@@ -160,19 +160,19 @@ CMakeFiles/activityTracker.dir/Activity.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/activityTracker.dir/Activity.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Giacomo Ponzuoli\Desktop\activityTracker\Activity.cpp" -o CMakeFiles\activityTracker.dir\Activity.cpp.s
 
-CMakeFiles/activityTracker.dir/Activities.cpp.obj: CMakeFiles/activityTracker.dir/flags.make
-CMakeFiles/activityTracker.dir/Activities.cpp.obj: CMakeFiles/activityTracker.dir/includes_CXX.rsp
-CMakeFiles/activityTracker.dir/Activities.cpp.obj: ../Activities.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Giacomo Ponzuoli\Desktop\activityTracker\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/activityTracker.dir/Activities.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\activityTracker.dir\Activities.cpp.obj -c "C:\Users\Giacomo Ponzuoli\Desktop\activityTracker\Activities.cpp"
+CMakeFiles/activityTracker.dir/Register.cpp.obj: CMakeFiles/activityTracker.dir/flags.make
+CMakeFiles/activityTracker.dir/Register.cpp.obj: CMakeFiles/activityTracker.dir/includes_CXX.rsp
+CMakeFiles/activityTracker.dir/Register.cpp.obj: ../Register.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Giacomo Ponzuoli\Desktop\activityTracker\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/activityTracker.dir/Register.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\activityTracker.dir\Register.cpp.obj -c "C:\Users\Giacomo Ponzuoli\Desktop\activityTracker\Register.cpp"
 
-CMakeFiles/activityTracker.dir/Activities.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/activityTracker.dir/Activities.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Giacomo Ponzuoli\Desktop\activityTracker\Activities.cpp" > CMakeFiles\activityTracker.dir\Activities.cpp.i
+CMakeFiles/activityTracker.dir/Register.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/activityTracker.dir/Register.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Giacomo Ponzuoli\Desktop\activityTracker\Register.cpp" > CMakeFiles\activityTracker.dir\Register.cpp.i
 
-CMakeFiles/activityTracker.dir/Activities.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/activityTracker.dir/Activities.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Giacomo Ponzuoli\Desktop\activityTracker\Activities.cpp" -o CMakeFiles\activityTracker.dir\Activities.cpp.s
+CMakeFiles/activityTracker.dir/Register.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/activityTracker.dir/Register.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Giacomo Ponzuoli\Desktop\activityTracker\Register.cpp" -o CMakeFiles\activityTracker.dir\Register.cpp.s
 
 # Object files for target activityTracker
 activityTracker_OBJECTS = \
@@ -182,7 +182,7 @@ activityTracker_OBJECTS = \
 "CMakeFiles/activityTracker.dir/NewActivityWindow.cpp.obj" \
 "CMakeFiles/activityTracker.dir/ListActivityWindow.cpp.obj" \
 "CMakeFiles/activityTracker.dir/Activity.cpp.obj" \
-"CMakeFiles/activityTracker.dir/Activities.cpp.obj"
+"CMakeFiles/activityTracker.dir/Register.cpp.obj"
 
 # External object files for target activityTracker
 activityTracker_EXTERNAL_OBJECTS =
@@ -193,7 +193,7 @@ activityTracker.exe: CMakeFiles/activityTracker.dir/MainWindow.cpp.obj
 activityTracker.exe: CMakeFiles/activityTracker.dir/NewActivityWindow.cpp.obj
 activityTracker.exe: CMakeFiles/activityTracker.dir/ListActivityWindow.cpp.obj
 activityTracker.exe: CMakeFiles/activityTracker.dir/Activity.cpp.obj
-activityTracker.exe: CMakeFiles/activityTracker.dir/Activities.cpp.obj
+activityTracker.exe: CMakeFiles/activityTracker.dir/Register.cpp.obj
 activityTracker.exe: CMakeFiles/activityTracker.dir/build.make
 activityTracker.exe: C:/Qt/5.9.9/mingw53_32/lib/libQt5Widgetsd.a
 activityTracker.exe: C:/Qt/5.9.9/mingw53_32/lib/libQt5Guid.a

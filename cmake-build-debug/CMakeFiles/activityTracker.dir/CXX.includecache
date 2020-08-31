@@ -6,6 +6,74 @@
 
 #IncludeRegexTransform: 
 
+../Activity.h
+QtCore/QString
+-
+QtCore/QDate
+-
+
+../ListActivityWindow.h
+QtWidgets/QDialog
+-
+QtWidgets/QLabel
+-
+QtWidgets/QScrollArea
+-
+QtCore/QDate
+-
+QtWidgets/QPushButton
+-
+QtWidgets/QGridLayout
+-
+QtCore/QSignalMapper
+-
+QtWidgets/QGroupBox
+-
+Register.h
+../Register.h
+iostream
+-
+
+../MainWindow.h
+QMainWindow
+-
+QtWidgets/QApplication
+-
+QtWidgets/QCalendarWidget
+-
+QtWidgets/QPushButton
+-
+QtWidgets/QLabel
+-
+QtWidgets/QDateTimeEdit
+-
+QtWidgets/QPushButton
+-
+NewActivityWindow.h
+../NewActivityWindow.h
+ListActivityWindow.h
+../ListActivityWindow.h
+
+../NewActivityWindow.h
+QtWidgets/QDialog
+-
+QtWidgets/QLabel
+-
+QtWidgets/QDateEdit
+-
+QtWidgets/QLineEdit
+-
+QtWidgets/QTextEdit
+-
+QtWidgets/QPushButton
+-
+
+../Register.h
+map
+-
+Activity.h
+../Activity.h
+
 C:/Qt/5.9.9/mingw53_32/include/QtCore/QDate
 qdatetime.h
 C:/Qt/5.9.9/mingw53_32/include/QtCore/qdatetime.h
@@ -13,6 +81,10 @@ C:/Qt/5.9.9/mingw53_32/include/QtCore/qdatetime.h
 C:/Qt/5.9.9/mingw53_32/include/QtCore/QSignalMapper
 qsignalmapper.h
 C:/Qt/5.9.9/mingw53_32/include/QtCore/qsignalmapper.h
+
+C:/Qt/5.9.9/mingw53_32/include/QtCore/QString
+qstring.h
+C:/Qt/5.9.9/mingw53_32/include/QtCore/qstring.h
 
 C:/Qt/5.9.9/mingw53_32/include/QtCore/qalgorithms.h
 QtCore/qglobal.h
@@ -108,6 +180,20 @@ limits.h
 new
 -
 
+C:/Qt/5.9.9/mingw53_32/include/QtCore/qcoreapplication.h
+QtCore/qglobal.h
+-
+QtCore/qstring.h
+-
+QtCore/qobject.h
+-
+QtCore/qcoreevent.h
+-
+QtCore/qeventloop.h
+-
+QtCore/qscopedpointer.h
+-
+
 C:/Qt/5.9.9/mingw53_32/include/QtCore/qcoreevent.h
 QtCore/qnamespace.h
 -
@@ -164,6 +250,10 @@ list
 map
 -
 utility
+-
+
+C:/Qt/5.9.9/mingw53_32/include/QtCore/qeventloop.h
+QtCore/qobject.h
 -
 
 C:/Qt/5.9.9/mingw53_32/include/QtCore/qfile.h
@@ -454,6 +544,18 @@ C:/Qt/5.9.9/mingw53_32/include/QtCore/qregexp.h
 QtCore/qglobal.h
 -
 QtCore/qstring.h
+-
+
+C:/Qt/5.9.9/mingw53_32/include/QtCore/qregularexpression.h
+QtCore/qglobal.h
+-
+QtCore/qstring.h
+-
+QtCore/qstringlist.h
+-
+QtCore/qshareddata.h
+-
+QtCore/qvariant.h
 -
 
 C:/Qt/5.9.9/mingw53_32/include/QtCore/qscopedpointer.h
@@ -788,6 +890,22 @@ QtCore/qsharedpointer.h
 QtCore/qrect.h
 -
 
+C:/Qt/5.9.9/mingw53_32/include/QtGui/qguiapplication.h
+QtGui/qtguiglobal.h
+-
+QtCore/qcoreapplication.h
+-
+QtGui/qwindowdefs.h
+-
+QtGui/qinputmethod.h
+-
+QtCore/qlocale.h
+-
+QtCore/qpoint.h
+-
+QtCore/qsize.h
+-
+
 C:/Qt/5.9.9/mingw53_32/include/QtGui/qicon.h
 QtGui/qtguiglobal.h
 -
@@ -818,6 +936,12 @@ QtCore/qrect.h
 QtCore/qstring.h
 -
 QtCore/qstringlist.h
+-
+
+C:/Qt/5.9.9/mingw53_32/include/QtGui/qinputmethod.h
+QtGui/qtguiglobal.h
+-
+QtCore/qobject.h
 -
 
 C:/Qt/5.9.9/mingw53_32/include/QtGui/qkeysequence.h
@@ -872,6 +996,14 @@ C:/Qt/5.9.9/mingw53_32/include/QtGui/qpalette.h
 QtGui/qtguiglobal.h
 -
 QtGui/qwindowdefs.h
+-
+QtGui/qcolor.h
+-
+QtGui/qbrush.h
+-
+
+C:/Qt/5.9.9/mingw53_32/include/QtGui/qpen.h
+QtGui/qtguiglobal.h
 -
 QtGui/qcolor.h
 -
@@ -934,6 +1066,62 @@ QtGui/qtguiglobal.h
 QtCore/qprocessordetection.h
 -
 
+C:/Qt/5.9.9/mingw53_32/include/QtGui/qtextcursor.h
+QtGui/qtguiglobal.h
+-
+QtCore/qstring.h
+-
+QtCore/qshareddata.h
+-
+QtGui/qtextformat.h
+-
+
+C:/Qt/5.9.9/mingw53_32/include/QtGui/qtextdocument.h
+QtGui/qtguiglobal.h
+-
+QtCore/qobject.h
+-
+QtCore/qsize.h
+-
+QtCore/qrect.h
+-
+QtCore/qvariant.h
+-
+QtGui/qfont.h
+-
+QtCore/qurl.h
+-
+
+C:/Qt/5.9.9/mingw53_32/include/QtGui/qtextformat.h
+QtGui/qtguiglobal.h
+-
+QtGui/qcolor.h
+-
+QtGui/qfont.h
+-
+QtCore/qshareddata.h
+-
+QtCore/qvector.h
+-
+QtCore/qvariant.h
+-
+QtGui/qpen.h
+-
+QtGui/qbrush.h
+-
+QtGui/qtextoption.h
+-
+
+C:/Qt/5.9.9/mingw53_32/include/QtGui/qtextoption.h
+QtGui/qtguiglobal.h
+-
+QtCore/qnamespace.h
+-
+QtCore/qchar.h
+-
+QtCore/qmetatype.h
+-
+
 C:/Qt/5.9.9/mingw53_32/include/QtGui/qtgui-config.h
 
 C:/Qt/5.9.9/mingw53_32/include/QtGui/qtguiglobal.h
@@ -968,6 +1156,20 @@ QtCore/qpoint.h
 QtCore/qrect.h
 -
 
+C:/Qt/5.9.9/mingw53_32/include/QtGui/qvalidator.h
+QtGui/qtguiglobal.h
+-
+QtCore/qobject.h
+-
+QtCore/qstring.h
+-
+QtCore/qregexp.h
+-
+QtCore/qregularexpression.h
+-
+QtCore/qlocale.h
+-
+
 C:/Qt/5.9.9/mingw53_32/include/QtGui/qvector2d.h
 QtGui/qtguiglobal.h
 -
@@ -990,6 +1192,22 @@ C:/Qt/5.9.9/mingw53_32/include/QtGui/qwindowdefs_win.h
 QtGui/qtguiglobal.h
 -
 
+C:/Qt/5.9.9/mingw53_32/include/QtWidgets/QApplication
+qapplication.h
+C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qapplication.h
+
+C:/Qt/5.9.9/mingw53_32/include/QtWidgets/QCalendarWidget
+qcalendarwidget.h
+C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qcalendarwidget.h
+
+C:/Qt/5.9.9/mingw53_32/include/QtWidgets/QDateEdit
+qdatetimeedit.h
+C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qdatetimeedit.h
+
+C:/Qt/5.9.9/mingw53_32/include/QtWidgets/QDateTimeEdit
+qdatetimeedit.h
+C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qdatetimeedit.h
+
 C:/Qt/5.9.9/mingw53_32/include/QtWidgets/QDialog
 qdialog.h
 C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qdialog.h
@@ -1006,6 +1224,14 @@ C:/Qt/5.9.9/mingw53_32/include/QtWidgets/QLabel
 qlabel.h
 C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qlabel.h
 
+C:/Qt/5.9.9/mingw53_32/include/QtWidgets/QLineEdit
+qlineedit.h
+C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qlineedit.h
+
+C:/Qt/5.9.9/mingw53_32/include/QtWidgets/QMainWindow
+qmainwindow.h
+C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qmainwindow.h
+
 C:/Qt/5.9.9/mingw53_32/include/QtWidgets/QPushButton
 qpushbutton.h
 C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qpushbutton.h
@@ -1013,6 +1239,10 @@ C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qpushbutton.h
 C:/Qt/5.9.9/mingw53_32/include/QtWidgets/QScrollArea
 qscrollarea.h
 C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qscrollarea.h
+
+C:/Qt/5.9.9/mingw53_32/include/QtWidgets/QTextEdit
+qtextedit.h
+C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qtextedit.h
 
 C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qabstractbutton.h
 QtWidgets/qtwidgetsglobal.h
@@ -1030,6 +1260,32 @@ QtWidgets/qtwidgetsglobal.h
 QtWidgets/qframe.h
 -
 
+C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qabstractspinbox.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtWidgets/qwidget.h
+-
+QtGui/qvalidator.h
+-
+
+C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qapplication.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtCore/qcoreapplication.h
+-
+QtGui/qwindowdefs.h
+-
+QtCore/qpoint.h
+-
+QtCore/qsize.h
+-
+QtGui/qcursor.h
+-
+QtWidgets/qdesktopwidget.h
+-
+QtGui/qguiapplication.h
+-
+
 C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qboxlayout.h
 QtWidgets/qtwidgetsglobal.h
 -
@@ -1038,6 +1294,30 @@ QtWidgets/qlayout.h
 QtWidgets/qwidget.h
 -
 limits.h
+-
+
+C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qcalendarwidget.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtWidgets/qwidget.h
+-
+QtCore/qdatetime.h
+-
+
+C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qdatetimeedit.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtCore/qdatetime.h
+-
+QtCore/qvariant.h
+-
+QtWidgets/qabstractspinbox.h
+-
+
+C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qdesktopwidget.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtWidgets/qwidget.h
 -
 
 C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qdialog.h
@@ -1104,6 +1384,26 @@ QtCore/qrect.h
 limits.h
 -
 
+C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qlineedit.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtWidgets/qframe.h
+-
+QtGui/qtextcursor.h
+-
+QtCore/qstring.h
+-
+QtCore/qmargins.h
+-
+
+C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qmainwindow.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtWidgets/qwidget.h
+-
+QtWidgets/qtabwidget.h
+-
+
 C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qpushbutton.h
 QtWidgets/qtwidgetsglobal.h
 -
@@ -1122,6 +1422,28 @@ QtWidgets/qtwidgetsglobal.h
 QtCore/qobject.h
 -
 QtCore/qalgorithms.h
+-
+
+C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qtabwidget.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtWidgets/qwidget.h
+-
+QtGui/qicon.h
+-
+
+C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qtextedit.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtWidgets/qabstractscrollarea.h
+-
+QtGui/qtextdocument.h
+-
+QtGui/qtextoption.h
+-
+QtGui/qtextcursor.h
+-
+QtGui/qtextformat.h
 -
 
 C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qtwidgets-config.h
@@ -1164,6 +1486,12 @@ QtGui/qkeysequence.h
 QtGui/qevent.h
 -
 
+C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/Activity.h
+QtCore/QString
+-
+QtCore/QDate
+-
+
 C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/ListActivityWindow.cpp
 ListActivityWindow.h
 C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/ListActivityWindow.h
@@ -1185,6 +1513,92 @@ QtCore/QSignalMapper
 -
 QtWidgets/QGroupBox
 -
+Register.h
+C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/Register.h
 iostream
 -
+
+C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/MainWindow.cpp
+iostream
+-
+MainWindow.h
+C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/MainWindow.h
+
+C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/MainWindow.h
+QMainWindow
+-
+QtWidgets/QApplication
+-
+QtWidgets/QCalendarWidget
+-
+QtWidgets/QPushButton
+-
+QtWidgets/QLabel
+-
+QtWidgets/QDateTimeEdit
+-
+QtWidgets/QPushButton
+-
+NewActivityWindow.h
+C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/NewActivityWindow.h
+ListActivityWindow.h
+C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/ListActivityWindow.h
+
+C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/NewActivityWindow.h
+QtWidgets/QDialog
+-
+QtWidgets/QLabel
+-
+QtWidgets/QDateEdit
+-
+QtWidgets/QLineEdit
+-
+QtWidgets/QTextEdit
+-
+QtWidgets/QPushButton
+-
+
+C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/Register.h
+map
+-
+Activity.h
+C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/Activity.h
+
+C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/cmake-build-debug/activityTracker_autogen/EWIEGA46WW/moc_ListActivityWindow.cpp
+ListActivityWindow.h
+C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/cmake-build-debug/activityTracker_autogen/EWIEGA46WW/ListActivityWindow.h
+QtCore/qbytearray.h
+-
+QtCore/qmetatype.h
+-
+
+C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/cmake-build-debug/activityTracker_autogen/EWIEGA46WW/moc_MainWindow.cpp
+MainWindow.h
+C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/cmake-build-debug/activityTracker_autogen/EWIEGA46WW/MainWindow.h
+QtCore/qbytearray.h
+-
+QtCore/qmetatype.h
+-
+
+C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/cmake-build-debug/activityTracker_autogen/EWIEGA46WW/moc_NewActivityWindow.cpp
+NewActivityWindow.h
+C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/cmake-build-debug/activityTracker_autogen/EWIEGA46WW/NewActivityWindow.h
+QtCore/qbytearray.h
+-
+QtCore/qmetatype.h
+-
+
+C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/cmake-build-debug/activityTracker_autogen/mocs_compilation.cpp
+EWIEGA46WW/moc_ListActivityWindow.cpp
+C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/cmake-build-debug/activityTracker_autogen/EWIEGA46WW/moc_ListActivityWindow.cpp
+EWIEGA46WW/moc_MainWindow.cpp
+C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/cmake-build-debug/activityTracker_autogen/EWIEGA46WW/moc_MainWindow.cpp
+EWIEGA46WW/moc_NewActivityWindow.cpp
+C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/cmake-build-debug/activityTracker_autogen/EWIEGA46WW/moc_NewActivityWindow.cpp
+
+C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/main.cpp
+QtWidgets/QApplication
+-
+MainWindow.h
+C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/MainWindow.h
 

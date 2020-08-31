@@ -33,11 +33,10 @@ ListActivityWindow::ListActivityWindow(QWidget *parent, QDate date) : QDialog(pa
 
     qWidget= new QWidget(this);
 
-    QSignalMapper *mapper = new QSignalMapper(this);
-
     QGridLayout *gridLayout = new QGridLayout(qWidget);
 
     for(int i = 0; i<100;i++) {
+        Activity a;
 
         QGroupBox *groupBox = new QGroupBox(tr("Prova"));
 
@@ -45,11 +44,13 @@ ListActivityWindow::ListActivityWindow(QWidget *parent, QDate date) : QDialog(pa
 
         QPushButton *p = new QPushButton((QIcon("../image/deleteActivity.png")), "");
         p->setFixedSize(32,32);
+
         QString s = "Indice: ";
         s+= QString::number(i);
+
         QLabel *l = new QLabel(s);
-        connect(p, SIGNAL(clicked()), mapper, SLOT(map()));
-        mapper->setMapping(p,i);
+
+        connect(p, &QPushButton::clicked, this, [this, a, i, groupBox](){ std::cout << "Indice: " << i << std::endl; delete groupBox; } );
 
         vbox->addWidget(l);
         vbox->addWidget(p);
@@ -58,7 +59,7 @@ ListActivityWindow::ListActivityWindow(QWidget *parent, QDate date) : QDialog(pa
         gridLayout->addWidget(groupBox, i,3);
 
     }
-    connect(mapper, SIGNAL(mapped(int)), this, SLOT(prov(int)));
+
     scrollAreaListActivity->setWidget(qWidget);
 
 }
@@ -69,7 +70,3 @@ ListActivityWindow::~ListActivityWindow() {
 }
 
 
-void ListActivityWindow::prov(int i) {
-    std::cout << "Prova" << std::endl;
-    std::cout << i << std::endl;
-}
