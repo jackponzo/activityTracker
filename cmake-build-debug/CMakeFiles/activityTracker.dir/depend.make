@@ -134,12 +134,17 @@ CMakeFiles/activityTracker.dir/ListActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_3
 CMakeFiles/activityTracker.dir/ListActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtGui/qpaintdevice.h
 CMakeFiles/activityTracker.dir/ListActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtGui/qpainterpath.h
 CMakeFiles/activityTracker.dir/ListActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtGui/qpalette.h
+CMakeFiles/activityTracker.dir/ListActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtGui/qpen.h
 CMakeFiles/activityTracker.dir/ListActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtGui/qpixelformat.h
 CMakeFiles/activityTracker.dir/ListActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtGui/qpixmap.h
 CMakeFiles/activityTracker.dir/ListActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtGui/qpolygon.h
 CMakeFiles/activityTracker.dir/ListActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtGui/qregion.h
 CMakeFiles/activityTracker.dir/ListActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtGui/qrgb.h
 CMakeFiles/activityTracker.dir/ListActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtGui/qrgba64.h
+CMakeFiles/activityTracker.dir/ListActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtGui/qtextcursor.h
+CMakeFiles/activityTracker.dir/ListActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtGui/qtextdocument.h
+CMakeFiles/activityTracker.dir/ListActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtGui/qtextformat.h
+CMakeFiles/activityTracker.dir/ListActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtGui/qtextoption.h
 CMakeFiles/activityTracker.dir/ListActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtGui/qtgui-config.h
 CMakeFiles/activityTracker.dir/ListActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtGui/qtguiglobal.h
 CMakeFiles/activityTracker.dir/ListActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtGui/qtouchdevice.h
@@ -153,6 +158,7 @@ CMakeFiles/activityTracker.dir/ListActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_3
 CMakeFiles/activityTracker.dir/ListActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/QLabel
 CMakeFiles/activityTracker.dir/ListActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/QPushButton
 CMakeFiles/activityTracker.dir/ListActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/QScrollArea
+CMakeFiles/activityTracker.dir/ListActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/QTextEdit
 CMakeFiles/activityTracker.dir/ListActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qabstractbutton.h
 CMakeFiles/activityTracker.dir/ListActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qabstractscrollarea.h
 CMakeFiles/activityTracker.dir/ListActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qboxlayout.h
@@ -166,6 +172,7 @@ CMakeFiles/activityTracker.dir/ListActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_3
 CMakeFiles/activityTracker.dir/ListActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qpushbutton.h
 CMakeFiles/activityTracker.dir/ListActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qscrollarea.h
 CMakeFiles/activityTracker.dir/ListActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qsizepolicy.h
+CMakeFiles/activityTracker.dir/ListActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qtextedit.h
 CMakeFiles/activityTracker.dir/ListActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qtwidgets-config.h
 CMakeFiles/activityTracker.dir/ListActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qtwidgetsglobal.h
 CMakeFiles/activityTracker.dir/ListActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qwidget.h

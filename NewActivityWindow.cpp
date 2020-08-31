@@ -4,7 +4,7 @@
 
 #include "NewActivityWindow.h"
 
-NewActivityWindow::NewActivityWindow(QWidget *parent) : QDialog(parent)
+NewActivityWindow::NewActivityWindow(QWidget *parent) : QDialog(parent, Qt::WindowSystemMenuHint | Qt::WindowTitleHint | Qt::WindowCloseButtonHint)
 {
     //grandezza pagina
     this->setFixedSize(500,625);
@@ -106,9 +106,11 @@ NewActivityWindow::NewActivityWindow(QWidget *parent) : QDialog(parent)
     buttonCancel = new QPushButton("Cancel", this);
     buttonCancel->setFixedSize(70, 40);
 
+
     QFont fontButtonCancel("Arial", 10);
     buttonCancel->setFont(fontButtonCancel);
     buttonCancel->move(370,575);
+    connect(buttonCancel, &QPushButton::clicked, this, [this](){this->close();} );
 
 };
 
@@ -122,5 +124,7 @@ NewActivityWindow::~NewActivityWindow(){
     delete timeEditEndTime;
     delete labelTitleActivity;
     delete lineEditTitleActivity;
+    delete buttonOk;
+    delete buttonCancel;
 
 }

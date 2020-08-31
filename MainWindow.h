@@ -15,6 +15,7 @@
 
 #include "NewActivityWindow.h"
 #include "ListActivityWindow.h"
+#include "Register.h"
 
 
 class MainWindow : public QMainWindow
@@ -34,5 +35,6 @@ private:
     QPushButton *buttonNewActivity;
     QLabel *labelActivityTracker;
 
+    Register *aRegister;
 };
 #endif // MAINWINDOW_H

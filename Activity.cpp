@@ -4,7 +4,7 @@
 
 #include "Activity.h"
 
-Activity::Activity(QString n, QString t, QString d, QDate da, QTime sT, QTime eT) : name(n), title(t), date(da), startTime(sT), endTime(eT) { }
+Activity::Activity(QString n, QString t, QString d, QDate da, QTime sT, QTime eT) : name(n), title(t), description(d), date(da), startTime(sT), endTime(eT) { }
 
 Activity::~Activity() { }
 

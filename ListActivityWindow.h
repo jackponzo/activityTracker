@@ -23,9 +23,11 @@ class ListActivityWindow : public QDialog {
     Q_OBJECT
 
 public:
-    ListActivityWindow(QWidget *parent = nullptr, QDate date = QDate::currentDate());
+    ListActivityWindow(QWidget *parent = nullptr, QDate date = QDate::currentDate(), Register *r = nullptr);
     ~ListActivityWindow();
 
+private:
+    void createEmptyLabel();
 
 private:
     QLabel *labelListActivity;
@@ -35,7 +37,6 @@ private:
 
     QWidget *qWidget;
 
-    Register *aRegister;
 };
 
 

@@ -10,6 +10,8 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
 {
     this->setFixedSize(600,600); //non posso modificare la grandezza della finestra
 
+    aRegister = new Register();
+
     //label "Activity Tracker"
     labelActivityTracker = new QLabel("Activity Tracker",this);
     labelActivityTracker->setFixedWidth(400);
@@ -52,7 +54,7 @@ void MainWindow::clickedNewActivity() {
 
 void MainWindow::clickedListActivity(QDate date) {
 
-    ListActivityWindow listActivityWindow(nullptr, date);
+    ListActivityWindow listActivityWindow(nullptr, date, aRegister);
     listActivityWindow.setWindowTitle("List Activity");
     listActivityWindow.setWindowIcon(QIcon("../image/listActivityWindow.png"));
 
