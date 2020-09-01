@@ -46,7 +46,7 @@ MainWindow::~MainWindow()
 }
 
 void MainWindow::clickedNewActivity() {
-    NewActivityWindow newActivityWindow;
+    NewActivityWindow newActivityWindow(nullptr, aRegister);
     newActivityWindow.setWindowTitle("New Activity");
     newActivityWindow.setWindowIcon(QIcon("../image/iconNewActivityWindow.png"));
     newActivityWindow.exec();

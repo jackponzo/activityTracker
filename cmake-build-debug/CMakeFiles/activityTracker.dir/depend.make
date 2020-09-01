@@ -303,6 +303,7 @@ CMakeFiles/activityTracker.dir/MainWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/includ
 CMakeFiles/activityTracker.dir/MainWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/QLabel
 CMakeFiles/activityTracker.dir/MainWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/QLineEdit
 CMakeFiles/activityTracker.dir/MainWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/QMainWindow
+CMakeFiles/activityTracker.dir/MainWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/QMessageBox
 CMakeFiles/activityTracker.dir/MainWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/QPushButton
 CMakeFiles/activityTracker.dir/MainWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/QScrollArea
 CMakeFiles/activityTracker.dir/MainWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/QTextEdit
@@ -323,6 +324,7 @@ CMakeFiles/activityTracker.dir/MainWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/includ
 CMakeFiles/activityTracker.dir/MainWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qlayoutitem.h
 CMakeFiles/activityTracker.dir/MainWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qlineedit.h
 CMakeFiles/activityTracker.dir/MainWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qmainwindow.h
+CMakeFiles/activityTracker.dir/MainWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qmessagebox.h
 CMakeFiles/activityTracker.dir/MainWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qpushbutton.h
 CMakeFiles/activityTracker.dir/MainWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qscrollarea.h
 CMakeFiles/activityTracker.dir/MainWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qsizepolicy.h
@@ -338,6 +340,8 @@ CMakeFiles/activityTracker.dir/MainWindow.cpp.obj: ../MainWindow.h
 CMakeFiles/activityTracker.dir/MainWindow.cpp.obj: ../NewActivityWindow.h
 CMakeFiles/activityTracker.dir/MainWindow.cpp.obj: ../Register.h
 
+CMakeFiles/activityTracker.dir/NewActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtCore/QDate
+CMakeFiles/activityTracker.dir/NewActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtCore/QString
 CMakeFiles/activityTracker.dir/NewActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtCore/qalgorithms.h
 CMakeFiles/activityTracker.dir/NewActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtCore/qarraydata.h
 CMakeFiles/activityTracker.dir/NewActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtCore/qatomic.h
@@ -446,6 +450,7 @@ CMakeFiles/activityTracker.dir/NewActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32
 CMakeFiles/activityTracker.dir/NewActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/QDialog
 CMakeFiles/activityTracker.dir/NewActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/QLabel
 CMakeFiles/activityTracker.dir/NewActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/QLineEdit
+CMakeFiles/activityTracker.dir/NewActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/QMessageBox
 CMakeFiles/activityTracker.dir/NewActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/QPushButton
 CMakeFiles/activityTracker.dir/NewActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/QTextEdit
 CMakeFiles/activityTracker.dir/NewActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qabstractbutton.h
@@ -456,14 +461,17 @@ CMakeFiles/activityTracker.dir/NewActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32
 CMakeFiles/activityTracker.dir/NewActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qframe.h
 CMakeFiles/activityTracker.dir/NewActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qlabel.h
 CMakeFiles/activityTracker.dir/NewActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qlineedit.h
+CMakeFiles/activityTracker.dir/NewActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qmessagebox.h
 CMakeFiles/activityTracker.dir/NewActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qpushbutton.h
 CMakeFiles/activityTracker.dir/NewActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qsizepolicy.h
 CMakeFiles/activityTracker.dir/NewActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qtextedit.h
 CMakeFiles/activityTracker.dir/NewActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qtwidgets-config.h
 CMakeFiles/activityTracker.dir/NewActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qtwidgetsglobal.h
 CMakeFiles/activityTracker.dir/NewActivityWindow.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qwidget.h
+CMakeFiles/activityTracker.dir/NewActivityWindow.cpp.obj: ../Activity.h
 CMakeFiles/activityTracker.dir/NewActivityWindow.cpp.obj: ../NewActivityWindow.cpp
 CMakeFiles/activityTracker.dir/NewActivityWindow.cpp.obj: ../NewActivityWindow.h
+CMakeFiles/activityTracker.dir/NewActivityWindow.cpp.obj: ../Register.h
 
 CMakeFiles/activityTracker.dir/Register.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtCore/QDate
 CMakeFiles/activityTracker.dir/Register.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtCore/QString
@@ -638,6 +646,7 @@ CMakeFiles/activityTracker.dir/activityTracker_autogen/mocs_compilation.cpp.obj:
 CMakeFiles/activityTracker.dir/activityTracker_autogen/mocs_compilation.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/QLabel
 CMakeFiles/activityTracker.dir/activityTracker_autogen/mocs_compilation.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/QLineEdit
 CMakeFiles/activityTracker.dir/activityTracker_autogen/mocs_compilation.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/QMainWindow
+CMakeFiles/activityTracker.dir/activityTracker_autogen/mocs_compilation.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/QMessageBox
 CMakeFiles/activityTracker.dir/activityTracker_autogen/mocs_compilation.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/QPushButton
 CMakeFiles/activityTracker.dir/activityTracker_autogen/mocs_compilation.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/QScrollArea
 CMakeFiles/activityTracker.dir/activityTracker_autogen/mocs_compilation.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/QTextEdit
@@ -658,6 +667,7 @@ CMakeFiles/activityTracker.dir/activityTracker_autogen/mocs_compilation.cpp.obj:
 CMakeFiles/activityTracker.dir/activityTracker_autogen/mocs_compilation.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qlayoutitem.h
 CMakeFiles/activityTracker.dir/activityTracker_autogen/mocs_compilation.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qlineedit.h
 CMakeFiles/activityTracker.dir/activityTracker_autogen/mocs_compilation.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qmainwindow.h
+CMakeFiles/activityTracker.dir/activityTracker_autogen/mocs_compilation.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qmessagebox.h
 CMakeFiles/activityTracker.dir/activityTracker_autogen/mocs_compilation.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qpushbutton.h
 CMakeFiles/activityTracker.dir/activityTracker_autogen/mocs_compilation.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qscrollarea.h
 CMakeFiles/activityTracker.dir/activityTracker_autogen/mocs_compilation.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qsizepolicy.h
@@ -793,6 +803,7 @@ CMakeFiles/activityTracker.dir/main.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWi
 CMakeFiles/activityTracker.dir/main.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/QLabel
 CMakeFiles/activityTracker.dir/main.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/QLineEdit
 CMakeFiles/activityTracker.dir/main.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/QMainWindow
+CMakeFiles/activityTracker.dir/main.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/QMessageBox
 CMakeFiles/activityTracker.dir/main.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/QPushButton
 CMakeFiles/activityTracker.dir/main.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/QScrollArea
 CMakeFiles/activityTracker.dir/main.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/QTextEdit
@@ -813,6 +824,7 @@ CMakeFiles/activityTracker.dir/main.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWi
 CMakeFiles/activityTracker.dir/main.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qlayoutitem.h
 CMakeFiles/activityTracker.dir/main.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qlineedit.h
 CMakeFiles/activityTracker.dir/main.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qmainwindow.h
+CMakeFiles/activityTracker.dir/main.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qmessagebox.h
 CMakeFiles/activityTracker.dir/main.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qpushbutton.h
 CMakeFiles/activityTracker.dir/main.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qscrollarea.h
 CMakeFiles/activityTracker.dir/main.cpp.obj: C:/Qt/5.9.9/mingw53_32/include/QtWidgets/qsizepolicy.h

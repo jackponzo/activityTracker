@@ -4,7 +4,7 @@
 
 #include "NewActivityWindow.h"
 
-NewActivityWindow::NewActivityWindow(QWidget *parent) : QDialog(parent, Qt::WindowSystemMenuHint | Qt::WindowTitleHint | Qt::WindowCloseButtonHint)
+NewActivityWindow::NewActivityWindow(QWidget *parent, Register *r) : QDialog(parent, Qt::WindowSystemMenuHint | Qt::WindowTitleHint | Qt::WindowCloseButtonHint)
 {
     //grandezza pagina
     this->setFixedSize(500,625);
@@ -101,10 +101,21 @@ NewActivityWindow::NewActivityWindow(QWidget *parent) : QDialog(parent, Qt::Wind
     QFont fontButtonOk("Arial", 10);
     buttonOk->setFont(fontButtonOk);
     buttonOk->move(450,575);
+    connect(buttonOk, &QPushButton::clicked, this, [r, this](){
+        if(this->activityIsOk(dateEditNewActivity, timeEditStartTime, timeEditEndTime, lineEditTitleActivity, textEditDescriptionActivity)){
+            Activity *a = new Activity(lineEditTitleActivity->text(), textEditDescriptionActivity->toPlainText(), dateEditNewActivity->date(), timeEditStartTime->time(), timeEditEndTime->time());
+
+            r->addActivity(a);
+            this->close();
+        }
+    }); //fine connect
 
     //bottone cancel
     buttonCancel = new QPushButton("Cancel", this);
     buttonCancel->setFixedSize(70, 40);
+    connect(buttonCancel, &QPushButton::clicked, this, [this](){
+        this->close();
+    });
 
 
     QFont fontButtonCancel("Arial", 10);
@@ -128,3 +139,37 @@ NewActivityWindow::~NewActivityWindow(){
     delete buttonCancel;
 
 }
+
+bool NewActivityWindow::activityIsOk(QDateEdit *date, QTimeEdit *sT, QTimeEdit *eT, QLineEdit *title,
+                                     QTextEdit *description) {
+    std::cout << "Entrato" << std::endl;
+    QMessageBox messageBox;
+    messageBox.setWindowTitle("Error");
+    messageBox.setWindowIcon(QIcon("../image/error.png"));
+
+    if(date->date().isNull()){
+        messageBox.setText("Date is not correct!");
+        messageBox.exec();
+        return false;
+    }
+    if(eT->time()<sT->time() || (eT->time().hour() == sT->time().hour() && eT->time().minute() == sT->time().minute())){
+        messageBox.setText("Times are not correct!");
+        messageBox.exec();
+        return false;
+    }
+    if(title->text().isEmpty()){
+        messageBox.setText("Title is not correct!");
+        messageBox.exec();
+        return false;
+    }
+    if(description->toPlainText().isEmpty()){
+        messageBox.setText("Description is not correct!");
+        messageBox.exec();
+        return false;
+    }
+    return true;
+}
+
+
+
+

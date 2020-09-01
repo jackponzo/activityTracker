@@ -13,11 +13,8 @@ class Activity {
 
 public:
     Activity() {} //costruttore per prova (va eliminato una volta completato il tutto)
-    Activity(QString n, QString t, QString d, QDate da, QTime sT, QTime eT);
+    Activity(QString t, QString d, QDate da, QTime sT, QTime eT);
     ~Activity();
-
-    const QString &getName() const;
-    void setName(const QString &name);
 
     const QString &getTitle() const;
     void setTitle(const QString &title);
@@ -38,7 +35,7 @@ public:
     bool operator!=(const Activity &rhs) const;
 
 private:
-    QString name;
+
     QString title;
     QString description;
     QDate date;
