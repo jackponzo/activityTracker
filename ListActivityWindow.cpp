@@ -17,9 +17,9 @@ ListActivityWindow::ListActivityWindow(QWidget *parent, QDate date, Register *r)
     labelListActivity->move(175 ,40);
     labelListActivity->setStyleSheet("* { color:red }");
 
-    Activity *a1 = new Activity("Nome1", "Titolo1", "Descrizione1" ,QDate(2020,7,2), QTime(12,00), QTime(13,00));
-    Activity *a2 = new Activity("Nome2", "Titolo2", "Descrizione2" ,QDate(2020,9,2), QTime(13,00), QTime(14,00));
-    Activity *a3 = new Activity("Nome3", "Titolo3", "Descrizione molto più lunga per testare il multi linea. Oggi ho fatto molto sport." ,QDate(2020,10,02), QTime(14,00), QTime(15,00));
+    //Activity *a1 = new Activity("Nome1", "Titolo1", "Descrizione1" ,QDate(2020,7,2), QTime(12,00), QTime(13,00));
+    //Activity *a2 = new Activity("Nome2", "Titolo2", "Descrizione1" ,QDate(2020,7,2), QTime(12,00), QTime(13,00));
+    //Activity *a3 = new Activity("Nome3", "Titolo3", "Descrizione molto più lunga per testare il multi linea. Oggi ho fatto molto sport." ,QDate(2020,10,02), QTime(14,00), QTime(15,00));
 
 
     //r->addActivity(a1);
@@ -92,7 +92,6 @@ ListActivityWindow::ListActivityWindow(QWidget *parent, QDate date, Register *r)
             vbox->addWidget(labelEndTime);
 
             //label descrizione
-            QTextEdit *prova;
             labelDescription = new QLabel(it.second->getDescription());
             labelDescription->setWordWrap(true);
             labelDescription->setMaximumWidth(412);
@@ -105,16 +104,12 @@ ListActivityWindow::ListActivityWindow(QWidget *parent, QDate date, Register *r)
             connect(buttonDelete, &QPushButton::clicked, this, [this, groupBox, r, it]() {
                 r->deleteActivity(it.second);
                 std::cout << r->getActivities().size() << std::endl;
-
                 delete groupBox;
-                if(r->isEmpty()) {
+                if(r->isEmpty())
                     delete this->scrollAreaListActivity;
-                    this->createEmptyLabel();
-                }
 
             });
             vbox->addWidget(buttonDelete);
-
 
             groupBox->setLayout(vbox);
 

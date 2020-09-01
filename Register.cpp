@@ -17,9 +17,16 @@ void Register::addActivity(Activity* a) {
 }
 
 void Register::deleteActivity(Activity* ac) {
-    for(const auto it : activities){
-        if(it.second == ac && it.first == ac->getDate())
-            activities.erase(it.first);
+
+    typedef std::multimap<QDate, Activity*>::iterator iterator;
+    std::pair<iterator, iterator> iterpair = activities.equal_range(ac->getDate());
+
+    iterator it = iterpair.first;
+    for (; it != iterpair.second; ++it) {
+        if (it->second == ac) {
+            activities.erase(it);
+            break;
+        }
     }
 }
 
@@ -36,4 +43,5 @@ const std::multimap<QDate, Activity *> &Register::getActivities() const {
 void Register::setActivities(const std::multimap<QDate, Activity *> &activities) {
     Register::activities = activities;
 }
+
 

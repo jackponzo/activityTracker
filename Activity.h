@@ -35,7 +35,6 @@ public:
     void setEndTime(const QTime &endTime);
 
     bool operator==(const Activity &rhs) const;
-
     bool operator!=(const Activity &rhs) const;
 
 private:
