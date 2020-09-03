@@ -1,1 +1,1 @@
- lib/googletest/libgtestd.a lib/googletest/libgtest_maind.a lib/googletest/libgtestd.a -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+ lib/googletest/libgtestd.a lib/googletest/libgtest_maind.a ../libcore.a lib/googletest/libgtestd.a C:/Qt/5.9.9/mingw53_32/lib/libQt5Widgetsd.a C:/Qt/5.9.9/mingw53_32/lib/libQt5Guid.a C:/Qt/5.9.9/mingw53_32/lib/libQt5Cored.a -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

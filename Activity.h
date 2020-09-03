@@ -12,7 +12,7 @@
 class Activity {
 
 public:
-    Activity() {} //costruttore per prova (va eliminato una volta completato il tutto)
+
     Activity(QString t, QString d, QDate da, QTime sT, QTime eT);
     ~Activity();
 

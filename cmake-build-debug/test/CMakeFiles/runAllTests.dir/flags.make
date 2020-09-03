@@ -4,7 +4,7 @@
 # compile CXX with C:/MinGW/bin/g++.exe
 CXX_FLAGS = -g   -std=gnu++11
 
-CXX_DEFINES = 
+CXX_DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
 
 CXX_INCLUDES = @CMakeFiles/runAllTests.dir/includes_CXX.rsp
 

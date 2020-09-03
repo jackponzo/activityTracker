@@ -232,6 +232,33 @@ TestActivity.cpp.s:
 	cd /d C:\Users\GIACOM~1\Desktop\ACTIVI~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\runAllTests.dir\build.make test/CMakeFiles/runAllTests.dir/TestActivity.cpp.s
 .PHONY : TestActivity.cpp.s
 
+TestRegister.obj: TestRegister.cpp.obj
+
+.PHONY : TestRegister.obj
+
+# target to build an object file
+TestRegister.cpp.obj:
+	cd /d C:\Users\GIACOM~1\Desktop\ACTIVI~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\runAllTests.dir\build.make test/CMakeFiles/runAllTests.dir/TestRegister.cpp.obj
+.PHONY : TestRegister.cpp.obj
+
+TestRegister.i: TestRegister.cpp.i
+
+.PHONY : TestRegister.i
+
+# target to preprocess a source file
+TestRegister.cpp.i:
+	cd /d C:\Users\GIACOM~1\Desktop\ACTIVI~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\runAllTests.dir\build.make test/CMakeFiles/runAllTests.dir/TestRegister.cpp.i
+.PHONY : TestRegister.cpp.i
+
+TestRegister.s: TestRegister.cpp.s
+
+.PHONY : TestRegister.s
+
+# target to generate assembly for a file
+TestRegister.cpp.s:
+	cd /d C:\Users\GIACOM~1\Desktop\ACTIVI~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\runAllTests.dir\build.make test/CMakeFiles/runAllTests.dir/TestRegister.cpp.s
+.PHONY : TestRegister.cpp.s
+
 runAllTests.obj: runAllTests.cpp.obj
 
 .PHONY : runAllTests.obj
@@ -303,6 +330,9 @@ help:
 	@echo ... TestActivity.obj
 	@echo ... TestActivity.i
 	@echo ... TestActivity.s
+	@echo ... TestRegister.obj
+	@echo ... TestRegister.i
+	@echo ... TestRegister.s
 	@echo ... runAllTests.obj
 	@echo ... runAllTests.i
 	@echo ... runAllTests.s

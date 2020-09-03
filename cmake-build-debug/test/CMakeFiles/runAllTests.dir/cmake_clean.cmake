@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/runAllTests_autogen.dir/ParseCache.txt"
   "runAllTests_autogen"
   "CMakeFiles/runAllTests.dir/TestActivity.cpp.obj"
+  "CMakeFiles/runAllTests.dir/TestRegister.cpp.obj"
   "CMakeFiles/runAllTests.dir/runAllTests.cpp.obj"
   "CMakeFiles/runAllTests.dir/runAllTests_autogen/mocs_compilation.cpp.obj"
   "librunAllTests.dll.a"

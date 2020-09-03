@@ -17,8 +17,8 @@ ListActivityWindow::ListActivityWindow(QWidget *parent, QDate date, Register *r)
     labelListActivity->move(175 ,40);
     labelListActivity->setStyleSheet("* { color:red }");
 
-    //Activity *a1 = new Activity("Titolo1", "Descrizione1" ,QDate(2020,7,2), QTime(12,00), QTime(13,00));
-    //Activity *a2 = new Activity("Titolo2", "Descrizione1" ,QDate(2020,7,2), QTime(12,00), QTime(13,00));
+    Activity *a1 = new Activity("Titolo1", "Descrizione1" ,QDate(2020,7,2), QTime(12,00), QTime(13,00));
+    Activity *a2 = new Activity("Titolo1", "Descrizione1" ,QDate(2020,7,2), QTime(12,00), QTime(13,00));
     //Activity *a3 = new Activity("Titolo3", "Descrizione molto più lunga per testare il multi linea. Oggi ho fatto molto sport." ,QDate(2020,10,02), QTime(14,00), QTime(15,00));
 
 

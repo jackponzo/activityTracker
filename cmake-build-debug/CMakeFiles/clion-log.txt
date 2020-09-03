@@ -1,17 +1,5 @@
 "C:\Program Files\JetBrains\CLion 2019.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "C:\Users\Giacomo Ponzuoli\Desktop\activityTracker"
-CMake Warning at test/lib/googletest/CMakeLists.txt:54 (project):
-  VERSION keyword not followed by a value or was followed by a value that
-  expanded to nothing.
-
-
 -- Could NOT find PythonInterp (missing: PYTHON_EXECUTABLE) 
-CMake Error at C:/Program Files/JetBrains/CLion 2019.3.2/bin/cmake/win/share/cmake-3.17/Modules/WriteBasicConfigVersionFile.cmake:43 (message):
-  No VERSION specified for WRITE_BASIC_CONFIG_VERSION_FILE()
-Call Stack (most recent call first):
-  C:/Program Files/JetBrains/CLion 2019.3.2/bin/cmake/win/share/cmake-3.17/Modules/CMakePackageConfigHelpers.cmake:225 (write_basic_config_version_file)
-  test/lib/googletest/CMakeLists.txt:103 (write_basic_package_version_file)
-
-
--- Configuring incomplete, errors occurred!
-See also "C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/cmake-build-debug/CMakeFiles/CMakeOutput.log".
-See also "C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/cmake-build-debug/CMakeFiles/CMakeError.log".
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/cmake-build-debug

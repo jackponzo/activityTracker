@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.17)
 project(activityTracker)
 
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 14)
 
 set(CMAKE_PREFIX_PATH "C:\\Qt\\5.9.9\\mingw53_32\\lib\\cmake")
 

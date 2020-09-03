@@ -3,10 +3,9 @@
 //
 
 #include "Activity.h"
+#include <iostream>
 
 Activity::Activity( QString t, QString d, QDate da, QTime sT, QTime eT) :  title(t), description(d), date(da), startTime(sT), endTime(eT) { }
-
-Activity::~Activity() { }
 
 const QString &Activity::getTitle() const {
     return title;
@@ -49,11 +48,15 @@ void Activity::setEndTime(const QTime &endTime) {
 }
 
 bool Activity::operator==(const Activity &rhs) const {
-    return title == rhs.title &&
-           description == rhs.description &&
-           date == rhs.date &&
-           startTime == rhs.startTime &&
-           endTime == rhs.endTime;
+
+    return title == rhs.getTitle() &&
+           description == rhs.getDescription() &&
+           date == rhs.getDate() &&
+           startTime.hour() == rhs.startTime.hour() &&
+           startTime.minute() == rhs.startTime.minute() &&
+           endTime.hour() == rhs.endTime.hour() &&
+           endTime.minute() == rhs.endTime.minute();
+
 }
 
 bool Activity::operator!=(const Activity &rhs) const {

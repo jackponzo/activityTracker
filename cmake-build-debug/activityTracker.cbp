@@ -236,11 +236,20 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add option="-DQT_WIDGETS_LIB"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add option="-DQT_CORE_LIB"/>
 					<Add directory="C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/cmake-build-debug/test"/>
 					<Add directory="C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/test"/>
 					<Add directory="C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/cmake-build-debug/test/runAllTests_autogen/include"/>
 					<Add directory="C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/test/lib/googletest"/>
 					<Add directory="C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/test/lib/googletest/include"/>
+					<Add directory="C:/Qt/5.9.9/mingw53_32/include"/>
+					<Add directory="C:/Qt/5.9.9/mingw53_32/include/QtWidgets"/>
+					<Add directory="C:/Qt/5.9.9/mingw53_32/include/QtGui"/>
+					<Add directory="C:/Qt/5.9.9/mingw53_32/include/QtANGLE"/>
+					<Add directory="C:/Qt/5.9.9/mingw53_32/include/QtCore"/>
+					<Add directory="C:/Qt/5.9.9/mingw53_32/./mkspecs/win32-g++"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/mingw32"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/backward"/>
@@ -262,11 +271,20 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add option="-DQT_WIDGETS_LIB"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add option="-DQT_CORE_LIB"/>
 					<Add directory="C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/cmake-build-debug/test"/>
 					<Add directory="C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/test"/>
 					<Add directory="C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/cmake-build-debug/test/runAllTests_autogen/include"/>
 					<Add directory="C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/test/lib/googletest"/>
 					<Add directory="C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/test/lib/googletest/include"/>
+					<Add directory="C:/Qt/5.9.9/mingw53_32/include"/>
+					<Add directory="C:/Qt/5.9.9/mingw53_32/include/QtWidgets"/>
+					<Add directory="C:/Qt/5.9.9/mingw53_32/include/QtGui"/>
+					<Add directory="C:/Qt/5.9.9/mingw53_32/include/QtANGLE"/>
+					<Add directory="C:/Qt/5.9.9/mingw53_32/include/QtCore"/>
+					<Add directory="C:/Qt/5.9.9/mingw53_32/./mkspecs/win32-g++"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/mingw32"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/backward"/>
@@ -462,6 +480,9 @@
 			<Option target="core"/>
 		</Unit>
 		<Unit filename="C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/test/TestActivity.cpp">
+			<Option target="runAllTests"/>
+		</Unit>
+		<Unit filename="C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/test/TestRegister.cpp">
 			<Option target="runAllTests"/>
 		</Unit>
 		<Unit filename="C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/test/lib/googletest/src/gtest-all.cc">
