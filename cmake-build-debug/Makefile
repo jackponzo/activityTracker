@@ -110,6 +110,16 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -120,16 +130,6 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
 
 # Special rule for the target install/strip
 install/strip: preinstall
@@ -189,6 +189,19 @@ activityTracker/fast:
 .PHONY : activityTracker/fast
 
 #=============================================================================
+# Target rules for targets named core
+
+# Build rule for target.
+core: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 core
+.PHONY : core
+
+# fast build rule for target.
+core/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\core.dir\build.make CMakeFiles/core.dir/build
+.PHONY : core/fast
+
+#=============================================================================
 # Target rules for targets named activityTracker_autogen
 
 # Build rule for target.
@@ -200,6 +213,19 @@ activityTracker_autogen: cmake_check_build_system
 activityTracker_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\activityTracker_autogen.dir\build.make CMakeFiles/activityTracker_autogen.dir/build
 .PHONY : activityTracker_autogen/fast
+
+#=============================================================================
+# Target rules for targets named core_autogen
+
+# Build rule for target.
+core_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 core_autogen
+.PHONY : core_autogen
+
+# fast build rule for target.
+core_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\core_autogen.dir\build.make CMakeFiles/core_autogen.dir/build
+.PHONY : core_autogen/fast
 
 #=============================================================================
 # Target rules for targets named runAllTests
@@ -228,58 +254,6 @@ runAllTests_autogen/fast:
 .PHONY : runAllTests_autogen/fast
 
 #=============================================================================
-# Target rules for targets named gmock_main
-
-# Build rule for target.
-gmock_main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gmock_main
-.PHONY : gmock_main
-
-# fast build rule for target.
-gmock_main/fast:
-	$(MAKE) $(MAKESILENT) -f test\lib\googletest\googlemock\CMakeFiles\gmock_main.dir\build.make test/lib/googletest/googlemock/CMakeFiles/gmock_main.dir/build
-.PHONY : gmock_main/fast
-
-#=============================================================================
-# Target rules for targets named gmock
-
-# Build rule for target.
-gmock: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gmock
-.PHONY : gmock
-
-# fast build rule for target.
-gmock/fast:
-	$(MAKE) $(MAKESILENT) -f test\lib\googletest\googlemock\CMakeFiles\gmock.dir\build.make test/lib/googletest/googlemock/CMakeFiles/gmock.dir/build
-.PHONY : gmock/fast
-
-#=============================================================================
-# Target rules for targets named gmock_main_autogen
-
-# Build rule for target.
-gmock_main_autogen: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gmock_main_autogen
-.PHONY : gmock_main_autogen
-
-# fast build rule for target.
-gmock_main_autogen/fast:
-	$(MAKE) $(MAKESILENT) -f test\lib\googletest\googlemock\CMakeFiles\gmock_main_autogen.dir\build.make test/lib/googletest/googlemock/CMakeFiles/gmock_main_autogen.dir/build
-.PHONY : gmock_main_autogen/fast
-
-#=============================================================================
-# Target rules for targets named gmock_autogen
-
-# Build rule for target.
-gmock_autogen: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gmock_autogen
-.PHONY : gmock_autogen
-
-# fast build rule for target.
-gmock_autogen/fast:
-	$(MAKE) $(MAKESILENT) -f test\lib\googletest\googlemock\CMakeFiles\gmock_autogen.dir\build.make test/lib/googletest/googlemock/CMakeFiles/gmock_autogen.dir/build
-.PHONY : gmock_autogen/fast
-
-#=============================================================================
 # Target rules for targets named gtest
 
 # Build rule for target.
@@ -289,7 +263,7 @@ gtest: cmake_check_build_system
 
 # fast build rule for target.
 gtest/fast:
-	$(MAKE) $(MAKESILENT) -f test\lib\googletest\googletest\CMakeFiles\gtest.dir\build.make test/lib/googletest/googletest/CMakeFiles/gtest.dir/build
+	$(MAKE) $(MAKESILENT) -f test\lib\googletest\CMakeFiles\gtest.dir\build.make test/lib/googletest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
 
 #=============================================================================
@@ -302,7 +276,7 @@ gtest_main: cmake_check_build_system
 
 # fast build rule for target.
 gtest_main/fast:
-	$(MAKE) $(MAKESILENT) -f test\lib\googletest\googletest\CMakeFiles\gtest_main.dir\build.make test/lib/googletest/googletest/CMakeFiles/gtest_main.dir/build
+	$(MAKE) $(MAKESILENT) -f test\lib\googletest\CMakeFiles\gtest_main.dir\build.make test/lib/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
 #=============================================================================
@@ -315,7 +289,7 @@ gtest_autogen: cmake_check_build_system
 
 # fast build rule for target.
 gtest_autogen/fast:
-	$(MAKE) $(MAKESILENT) -f test\lib\googletest\googletest\CMakeFiles\gtest_autogen.dir\build.make test/lib/googletest/googletest/CMakeFiles/gtest_autogen.dir/build
+	$(MAKE) $(MAKESILENT) -f test\lib\googletest\CMakeFiles\gtest_autogen.dir\build.make test/lib/googletest/CMakeFiles/gtest_autogen.dir/build
 .PHONY : gtest_autogen/fast
 
 #=============================================================================
@@ -328,7 +302,7 @@ gtest_main_autogen: cmake_check_build_system
 
 # fast build rule for target.
 gtest_main_autogen/fast:
-	$(MAKE) $(MAKESILENT) -f test\lib\googletest\googletest\CMakeFiles\gtest_main_autogen.dir\build.make test/lib/googletest/googletest/CMakeFiles/gtest_main_autogen.dir/build
+	$(MAKE) $(MAKESILENT) -f test\lib\googletest\CMakeFiles\gtest_main_autogen.dir\build.make test/lib/googletest/CMakeFiles/gtest_main_autogen.dir/build
 .PHONY : gtest_main_autogen/fast
 
 Activity.obj: Activity.cpp.obj
@@ -337,7 +311,7 @@ Activity.obj: Activity.cpp.obj
 
 # target to build an object file
 Activity.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\activityTracker.dir\build.make CMakeFiles/activityTracker.dir/Activity.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\core.dir\build.make CMakeFiles/core.dir/Activity.cpp.obj
 .PHONY : Activity.cpp.obj
 
 Activity.i: Activity.cpp.i
@@ -346,7 +320,7 @@ Activity.i: Activity.cpp.i
 
 # target to preprocess a source file
 Activity.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\activityTracker.dir\build.make CMakeFiles/activityTracker.dir/Activity.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\core.dir\build.make CMakeFiles/core.dir/Activity.cpp.i
 .PHONY : Activity.cpp.i
 
 Activity.s: Activity.cpp.s
@@ -355,7 +329,7 @@ Activity.s: Activity.cpp.s
 
 # target to generate assembly for a file
 Activity.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\activityTracker.dir\build.make CMakeFiles/activityTracker.dir/Activity.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\core.dir\build.make CMakeFiles/core.dir/Activity.cpp.s
 .PHONY : Activity.cpp.s
 
 ListActivityWindow.obj: ListActivityWindow.cpp.obj
@@ -364,7 +338,7 @@ ListActivityWindow.obj: ListActivityWindow.cpp.obj
 
 # target to build an object file
 ListActivityWindow.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\activityTracker.dir\build.make CMakeFiles/activityTracker.dir/ListActivityWindow.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\core.dir\build.make CMakeFiles/core.dir/ListActivityWindow.cpp.obj
 .PHONY : ListActivityWindow.cpp.obj
 
 ListActivityWindow.i: ListActivityWindow.cpp.i
@@ -373,7 +347,7 @@ ListActivityWindow.i: ListActivityWindow.cpp.i
 
 # target to preprocess a source file
 ListActivityWindow.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\activityTracker.dir\build.make CMakeFiles/activityTracker.dir/ListActivityWindow.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\core.dir\build.make CMakeFiles/core.dir/ListActivityWindow.cpp.i
 .PHONY : ListActivityWindow.cpp.i
 
 ListActivityWindow.s: ListActivityWindow.cpp.s
@@ -382,7 +356,7 @@ ListActivityWindow.s: ListActivityWindow.cpp.s
 
 # target to generate assembly for a file
 ListActivityWindow.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\activityTracker.dir\build.make CMakeFiles/activityTracker.dir/ListActivityWindow.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\core.dir\build.make CMakeFiles/core.dir/ListActivityWindow.cpp.s
 .PHONY : ListActivityWindow.cpp.s
 
 MainWindow.obj: MainWindow.cpp.obj
@@ -391,7 +365,7 @@ MainWindow.obj: MainWindow.cpp.obj
 
 # target to build an object file
 MainWindow.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\activityTracker.dir\build.make CMakeFiles/activityTracker.dir/MainWindow.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\core.dir\build.make CMakeFiles/core.dir/MainWindow.cpp.obj
 .PHONY : MainWindow.cpp.obj
 
 MainWindow.i: MainWindow.cpp.i
@@ -400,7 +374,7 @@ MainWindow.i: MainWindow.cpp.i
 
 # target to preprocess a source file
 MainWindow.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\activityTracker.dir\build.make CMakeFiles/activityTracker.dir/MainWindow.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\core.dir\build.make CMakeFiles/core.dir/MainWindow.cpp.i
 .PHONY : MainWindow.cpp.i
 
 MainWindow.s: MainWindow.cpp.s
@@ -409,7 +383,7 @@ MainWindow.s: MainWindow.cpp.s
 
 # target to generate assembly for a file
 MainWindow.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\activityTracker.dir\build.make CMakeFiles/activityTracker.dir/MainWindow.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\core.dir\build.make CMakeFiles/core.dir/MainWindow.cpp.s
 .PHONY : MainWindow.cpp.s
 
 NewActivityWindow.obj: NewActivityWindow.cpp.obj
@@ -418,7 +392,7 @@ NewActivityWindow.obj: NewActivityWindow.cpp.obj
 
 # target to build an object file
 NewActivityWindow.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\activityTracker.dir\build.make CMakeFiles/activityTracker.dir/NewActivityWindow.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\core.dir\build.make CMakeFiles/core.dir/NewActivityWindow.cpp.obj
 .PHONY : NewActivityWindow.cpp.obj
 
 NewActivityWindow.i: NewActivityWindow.cpp.i
@@ -427,7 +401,7 @@ NewActivityWindow.i: NewActivityWindow.cpp.i
 
 # target to preprocess a source file
 NewActivityWindow.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\activityTracker.dir\build.make CMakeFiles/activityTracker.dir/NewActivityWindow.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\core.dir\build.make CMakeFiles/core.dir/NewActivityWindow.cpp.i
 .PHONY : NewActivityWindow.cpp.i
 
 NewActivityWindow.s: NewActivityWindow.cpp.s
@@ -436,7 +410,7 @@ NewActivityWindow.s: NewActivityWindow.cpp.s
 
 # target to generate assembly for a file
 NewActivityWindow.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\activityTracker.dir\build.make CMakeFiles/activityTracker.dir/NewActivityWindow.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\core.dir\build.make CMakeFiles/core.dir/NewActivityWindow.cpp.s
 .PHONY : NewActivityWindow.cpp.s
 
 Register.obj: Register.cpp.obj
@@ -445,7 +419,7 @@ Register.obj: Register.cpp.obj
 
 # target to build an object file
 Register.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\activityTracker.dir\build.make CMakeFiles/activityTracker.dir/Register.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\core.dir\build.make CMakeFiles/core.dir/Register.cpp.obj
 .PHONY : Register.cpp.obj
 
 Register.i: Register.cpp.i
@@ -454,7 +428,7 @@ Register.i: Register.cpp.i
 
 # target to preprocess a source file
 Register.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\activityTracker.dir\build.make CMakeFiles/activityTracker.dir/Register.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\core.dir\build.make CMakeFiles/core.dir/Register.cpp.i
 .PHONY : Register.cpp.i
 
 Register.s: Register.cpp.s
@@ -463,7 +437,7 @@ Register.s: Register.cpp.s
 
 # target to generate assembly for a file
 Register.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\activityTracker.dir\build.make CMakeFiles/activityTracker.dir/Register.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\core.dir\build.make CMakeFiles/core.dir/Register.cpp.s
 .PHONY : Register.cpp.s
 
 activityTracker_autogen/mocs_compilation.obj: activityTracker_autogen/mocs_compilation.cpp.obj
@@ -493,6 +467,33 @@ activityTracker_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\activityTracker.dir\build.make CMakeFiles/activityTracker.dir/activityTracker_autogen/mocs_compilation.cpp.s
 .PHONY : activityTracker_autogen/mocs_compilation.cpp.s
 
+core_autogen/mocs_compilation.obj: core_autogen/mocs_compilation.cpp.obj
+
+.PHONY : core_autogen/mocs_compilation.obj
+
+# target to build an object file
+core_autogen/mocs_compilation.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\core.dir\build.make CMakeFiles/core.dir/core_autogen/mocs_compilation.cpp.obj
+.PHONY : core_autogen/mocs_compilation.cpp.obj
+
+core_autogen/mocs_compilation.i: core_autogen/mocs_compilation.cpp.i
+
+.PHONY : core_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+core_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\core.dir\build.make CMakeFiles/core.dir/core_autogen/mocs_compilation.cpp.i
+.PHONY : core_autogen/mocs_compilation.cpp.i
+
+core_autogen/mocs_compilation.s: core_autogen/mocs_compilation.cpp.s
+
+.PHONY : core_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+core_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\core.dir\build.make CMakeFiles/core.dir/core_autogen/mocs_compilation.cpp.s
+.PHONY : core_autogen/mocs_compilation.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -500,6 +501,7 @@ main.obj: main.cpp.obj
 # target to build an object file
 main.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\activityTracker.dir\build.make CMakeFiles/activityTracker.dir/main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\core.dir\build.make CMakeFiles/core.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -509,6 +511,7 @@ main.i: main.cpp.i
 # target to preprocess a source file
 main.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\activityTracker.dir\build.make CMakeFiles/activityTracker.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\core.dir\build.make CMakeFiles/core.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -518,6 +521,7 @@ main.s: main.cpp.s
 # target to generate assembly for a file
 main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\activityTracker.dir\build.make CMakeFiles/activityTracker.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\core.dir\build.make CMakeFiles/core.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -533,14 +537,12 @@ help:
 	@echo ... list_install_components
 	@echo ... rebuild_cache
 	@echo ... activityTracker_autogen
-	@echo ... gmock_autogen
-	@echo ... gmock_main_autogen
+	@echo ... core_autogen
 	@echo ... gtest_autogen
 	@echo ... gtest_main_autogen
 	@echo ... runAllTests_autogen
 	@echo ... activityTracker
-	@echo ... gmock
-	@echo ... gmock_main
+	@echo ... core
 	@echo ... gtest
 	@echo ... gtest_main
 	@echo ... runAllTests
@@ -562,6 +564,9 @@ help:
 	@echo ... activityTracker_autogen/mocs_compilation.obj
 	@echo ... activityTracker_autogen/mocs_compilation.i
 	@echo ... activityTracker_autogen/mocs_compilation.s
+	@echo ... core_autogen/mocs_compilation.obj
+	@echo ... core_autogen/mocs_compilation.i
+	@echo ... core_autogen/mocs_compilation.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

@@ -32,9 +32,22 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for each subdirectory.
-  include("C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/cmake-build-debug/test/lib/googletest/googlemock/cmake_install.cmake")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/cmake-build-debug/test/lib/googletest/libgtestd.a")
+endif()
 
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/cmake-build-debug/test/lib/googletest/libgtest_maind.a")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/test/lib/googletest/include/gtest")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES
+    "C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/cmake-build-debug/gtest.pc"
+    "C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/cmake-build-debug/gtest_main.pc"
+    )
 endif()
 

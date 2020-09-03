@@ -205,6 +205,33 @@ runAllTests_autogen/fast:
 	cd /d C:\Users\GIACOM~1\Desktop\ACTIVI~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\runAllTests_autogen.dir\build.make test/CMakeFiles/runAllTests_autogen.dir/build
 .PHONY : runAllTests_autogen/fast
 
+TestActivity.obj: TestActivity.cpp.obj
+
+.PHONY : TestActivity.obj
+
+# target to build an object file
+TestActivity.cpp.obj:
+	cd /d C:\Users\GIACOM~1\Desktop\ACTIVI~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\runAllTests.dir\build.make test/CMakeFiles/runAllTests.dir/TestActivity.cpp.obj
+.PHONY : TestActivity.cpp.obj
+
+TestActivity.i: TestActivity.cpp.i
+
+.PHONY : TestActivity.i
+
+# target to preprocess a source file
+TestActivity.cpp.i:
+	cd /d C:\Users\GIACOM~1\Desktop\ACTIVI~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\runAllTests.dir\build.make test/CMakeFiles/runAllTests.dir/TestActivity.cpp.i
+.PHONY : TestActivity.cpp.i
+
+TestActivity.s: TestActivity.cpp.s
+
+.PHONY : TestActivity.s
+
+# target to generate assembly for a file
+TestActivity.cpp.s:
+	cd /d C:\Users\GIACOM~1\Desktop\ACTIVI~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\runAllTests.dir\build.make test/CMakeFiles/runAllTests.dir/TestActivity.cpp.s
+.PHONY : TestActivity.cpp.s
+
 runAllTests.obj: runAllTests.cpp.obj
 
 .PHONY : runAllTests.obj
@@ -273,6 +300,9 @@ help:
 	@echo ... rebuild_cache
 	@echo ... runAllTests_autogen
 	@echo ... runAllTests
+	@echo ... TestActivity.obj
+	@echo ... TestActivity.i
+	@echo ... TestActivity.s
 	@echo ... runAllTests.obj
 	@echo ... runAllTests.i
 	@echo ... runAllTests.s

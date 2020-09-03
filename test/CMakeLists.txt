@@ -1,12 +1,21 @@
-cmake_minimum_required(VERSION 3.17)
+cmake_minimum_required(VERSION 3.12)
 project(test)
 
-set(CMAKE_CXX_STANDARD 14)
+#Qt5 Widgets
+set(CMAKE_PREFIX_PATH "C:\\Qt\\5.9.9\\mingw53_32\\lib\\cmake")
+set(CMAKE_INCLUDE_CURRENT_DIR ON)
+set(CMAKE_AUTOMOC ON)
+find_package(Qt5Widgets)
 
-add_subdirectory(./lib/googletest)
+
+#GoogleTest
+set(CMAKE_CXX_STANDARD 11)
+add_subdirectory(./lib/googletest/)
 set(gtest_SOURCE_DIR, ./lib/googletest/)
-include_directories(${gtest_SOURCE_DIR}/include
-        ${gtest_SOURCE_DIR})
+include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
 
-set(SOURCE_FILES runAllTests.cpp)
-add_executable(runAllTests ${SOURCE_FILES})
+
+set(TEST_SOURCE_FILES runAllTests.cpp TestActivity.cpp)
+
+add_executable(runAllTests ${TEST_SOURCE_FILES})
+target_link_libraries(runAllTests gtest gtest_main)

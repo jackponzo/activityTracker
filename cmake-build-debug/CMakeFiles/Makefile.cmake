@@ -7,18 +7,15 @@ set(CMAKE_DEPENDS_GENERATOR "MinGW Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "C:/Program Files/JetBrains/CLion 2019.3.2/bin/cmake/win/share/cmake-3.17/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in"
   "C:/Program Files/JetBrains/CLion 2019.3.2/bin/cmake/win/share/cmake-3.17/Modules/CMakeCInformation.cmake"
   "C:/Program Files/JetBrains/CLion 2019.3.2/bin/cmake/win/share/cmake-3.17/Modules/CMakeCXXInformation.cmake"
   "C:/Program Files/JetBrains/CLion 2019.3.2/bin/cmake/win/share/cmake-3.17/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake"
   "C:/Program Files/JetBrains/CLion 2019.3.2/bin/cmake/win/share/cmake-3.17/Modules/CMakeCommonLanguageInclude.cmake"
-  "C:/Program Files/JetBrains/CLion 2019.3.2/bin/cmake/win/share/cmake-3.17/Modules/CMakeDependentOption.cmake"
   "C:/Program Files/JetBrains/CLion 2019.3.2/bin/cmake/win/share/cmake-3.17/Modules/CMakeExtraGeneratorDetermineCompilerMacrosAndIncludeDirs.cmake"
   "C:/Program Files/JetBrains/CLion 2019.3.2/bin/cmake/win/share/cmake-3.17/Modules/CMakeFindCodeBlocks.cmake"
   "C:/Program Files/JetBrains/CLion 2019.3.2/bin/cmake/win/share/cmake-3.17/Modules/CMakeGenericSystem.cmake"
   "C:/Program Files/JetBrains/CLion 2019.3.2/bin/cmake/win/share/cmake-3.17/Modules/CMakeInitializeConfigs.cmake"
   "C:/Program Files/JetBrains/CLion 2019.3.2/bin/cmake/win/share/cmake-3.17/Modules/CMakeLanguageInformation.cmake"
-  "C:/Program Files/JetBrains/CLion 2019.3.2/bin/cmake/win/share/cmake-3.17/Modules/CMakePackageConfigHelpers.cmake"
   "C:/Program Files/JetBrains/CLion 2019.3.2/bin/cmake/win/share/cmake-3.17/Modules/CMakeParseArguments.cmake"
   "C:/Program Files/JetBrains/CLion 2019.3.2/bin/cmake/win/share/cmake-3.17/Modules/CMakeRCInformation.cmake"
   "C:/Program Files/JetBrains/CLion 2019.3.2/bin/cmake/win/share/cmake-3.17/Modules/CMakeSystemSpecificInformation.cmake"
@@ -30,7 +27,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/JetBrains/CLion 2019.3.2/bin/cmake/win/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake"
   "C:/Program Files/JetBrains/CLion 2019.3.2/bin/cmake/win/share/cmake-3.17/Modules/FindPackageMessage.cmake"
   "C:/Program Files/JetBrains/CLion 2019.3.2/bin/cmake/win/share/cmake-3.17/Modules/FindPythonInterp.cmake"
-  "C:/Program Files/JetBrains/CLion 2019.3.2/bin/cmake/win/share/cmake-3.17/Modules/GNUInstallDirs.cmake"
   "C:/Program Files/JetBrains/CLion 2019.3.2/bin/cmake/win/share/cmake-3.17/Modules/Internal/CMakeCheckCompilerFlag.cmake"
   "C:/Program Files/JetBrains/CLion 2019.3.2/bin/cmake/win/share/cmake-3.17/Modules/Platform/Windows-GNU-C-ABI.cmake"
   "C:/Program Files/JetBrains/CLion 2019.3.2/bin/cmake/win/share/cmake-3.17/Modules/Platform/Windows-GNU-C.cmake"
@@ -40,7 +36,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/JetBrains/CLion 2019.3.2/bin/cmake/win/share/cmake-3.17/Modules/Platform/Windows.cmake"
   "C:/Program Files/JetBrains/CLion 2019.3.2/bin/cmake/win/share/cmake-3.17/Modules/Platform/WindowsPaths.cmake"
   "C:/Program Files/JetBrains/CLion 2019.3.2/bin/cmake/win/share/cmake-3.17/Modules/ProcessorCount.cmake"
-  "C:/Program Files/JetBrains/CLion 2019.3.2/bin/cmake/win/share/cmake-3.17/Modules/WriteBasicConfigVersionFile.cmake"
   "C:/Qt/5.9.9/mingw53_32/lib/cmake/Qt5Core/Qt5CoreConfig.cmake"
   "C:/Qt/5.9.9/mingw53_32/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake"
   "C:/Qt/5.9.9/mingw53_32/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake"
@@ -72,14 +67,9 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.17.3/CMakeSystem.cmake"
   "../test/CMakeLists.txt"
   "../test/lib/googletest/CMakeLists.txt"
-  "../test/lib/googletest/googlemock/CMakeLists.txt"
-  "../test/lib/googletest/googlemock/cmake/gmock.pc.in"
-  "../test/lib/googletest/googlemock/cmake/gmock_main.pc.in"
-  "../test/lib/googletest/googletest/CMakeLists.txt"
-  "../test/lib/googletest/googletest/cmake/Config.cmake.in"
-  "../test/lib/googletest/googletest/cmake/gtest.pc.in"
-  "../test/lib/googletest/googletest/cmake/gtest_main.pc.in"
-  "../test/lib/googletest/googletest/cmake/internal_utils.cmake"
+  "../test/lib/googletest/cmake/gtest.pc.in"
+  "../test/lib/googletest/cmake/gtest_main.pc.in"
+  "../test/lib/googletest/cmake/internal_utils.cmake"
   )
 
 # The corresponding makefile is:
@@ -91,25 +81,22 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/activityTracker_autogen.dir/AutogenInfo.json"
+  "CMakeFiles/core_autogen.dir/AutogenInfo.json"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "test/CMakeFiles/CMakeDirectoryInformation.cmake"
   "test/lib/googletest/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "test/lib/googletest/googlemock/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "test/lib/googletest/googletest/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/activityTracker.dir/DependInfo.cmake"
+  "CMakeFiles/core.dir/DependInfo.cmake"
   "CMakeFiles/activityTracker_autogen.dir/DependInfo.cmake"
+  "CMakeFiles/core_autogen.dir/DependInfo.cmake"
   "test/CMakeFiles/runAllTests.dir/DependInfo.cmake"
   "test/CMakeFiles/runAllTests_autogen.dir/DependInfo.cmake"
-  "test/lib/googletest/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake"
-  "test/lib/googletest/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
-  "test/lib/googletest/googlemock/CMakeFiles/gmock_main_autogen.dir/DependInfo.cmake"
-  "test/lib/googletest/googlemock/CMakeFiles/gmock_autogen.dir/DependInfo.cmake"
-  "test/lib/googletest/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
-  "test/lib/googletest/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
-  "test/lib/googletest/googletest/CMakeFiles/gtest_autogen.dir/DependInfo.cmake"
-  "test/lib/googletest/googletest/CMakeFiles/gtest_main_autogen.dir/DependInfo.cmake"
+  "test/lib/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "test/lib/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
+  "test/lib/googletest/CMakeFiles/gtest_autogen.dir/DependInfo.cmake"
+  "test/lib/googletest/CMakeFiles/gtest_main_autogen.dir/DependInfo.cmake"
   )

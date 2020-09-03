@@ -33,7 +33,8 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
+  # Include the install script for each subdirectory.
   include("C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/cmake-build-debug/test/lib/googletest/cmake_install.cmake")
+
 endif()
 
