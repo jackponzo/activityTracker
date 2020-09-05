@@ -1451,6 +1451,8 @@ QtCore/QSignalMapper
 -
 QtWidgets/QGroupBox
 -
+QtWidgets/QTextEdit
+-
 Register.h
 C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/Register.h
 iostream
@@ -1501,12 +1503,10 @@ C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/Register.h
 C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/Register.h
 map
 -
-ostream
+iostream
 -
 Activity.h
 C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/Activity.h
-
-C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/cmake-build-debug/activityTracker_autogen/mocs_compilation.cpp
 
 C:/Users/Giacomo Ponzuoli/Desktop/activityTracker/main.cpp
 QtWidgets/QApplication

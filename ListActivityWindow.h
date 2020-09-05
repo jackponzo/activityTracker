@@ -13,6 +13,7 @@
 #include <QtWidgets/QGridLayout>
 #include <QtCore/QSignalMapper>
 #include <QtWidgets/QGroupBox>
+#include <QtWidgets/QTextEdit>
 
 #include "Register.h"
 

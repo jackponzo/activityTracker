@@ -142,7 +142,6 @@ NewActivityWindow::~NewActivityWindow(){
 
 bool NewActivityWindow::activityIsOk(QDateEdit *date, QTimeEdit *sT, QTimeEdit *eT, QLineEdit *title,
                                      QTextEdit *description) {
-    std::cout << "Entrato" << std::endl;
     QMessageBox messageBox;
     messageBox.setWindowTitle("Error");
     messageBox.setWindowIcon(QIcon("../image/error.png"));

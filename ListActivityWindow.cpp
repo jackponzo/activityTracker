@@ -2,10 +2,9 @@
 // Created by Giacomo Ponzuoli on 29/08/2020.
 //
 
-#include <QtWidgets/QTextEdit>
 #include "ListActivityWindow.h"
 
-ListActivityWindow::ListActivityWindow(QWidget *parent, QDate date, Register *r) : QDialog(parent,  Qt::WindowSystemMenuHint | Qt::WindowTitleHint | Qt::WindowCloseButtonHint) {
+ListActivityWindow::ListActivityWindow(QWidget *parent, QDate date, Register *r) : QDialog(parent, Qt::WindowSystemMenuHint | Qt::WindowTitleHint | Qt::WindowCloseButtonHint) {
 
     this->setFixedSize(500,500);
 
@@ -16,17 +15,6 @@ ListActivityWindow::ListActivityWindow(QWidget *parent, QDate date, Register *r)
     labelListActivity->setFont(fontLabelListActivity);
     labelListActivity->move(175 ,40);
     labelListActivity->setStyleSheet("* { color:red }");
-
-    Activity *a1 = new Activity("Titolo1", "Descrizione1" ,QDate(2020,7,2), QTime(12,00), QTime(13,00));
-    Activity *a2 = new Activity("Titolo1", "Descrizione1" ,QDate(2020,7,2), QTime(12,00), QTime(13,00));
-    //Activity *a3 = new Activity("Titolo3", "Descrizione molto più lunga per testare il multi linea. Oggi ho fatto molto sport." ,QDate(2020,10,02), QTime(14,00), QTime(15,00));
-
-
-    //r->addActivity(a1);
-    //r->addActivity(a2);
-    //r->addActivity(a3);
-
-    //std::cout << r->getActivities().size() << std::endl;
 
     //label Date
     QString s = "Date:   ";
@@ -40,7 +28,7 @@ ListActivityWindow::ListActivityWindow(QWidget *parent, QDate date, Register *r)
     QFont fontLabel("Arial", 10);
     QFont fontTitle("Arial", 11, QFont::Bold);
 
-    if(r->isEmpty()){ //se non ci sono attività
+    if(r->getActivities().find(date) == r->getActivities().end()){ //se non ci sono attività
         createEmptyLabel();
     }else {
 
@@ -59,61 +47,57 @@ ListActivityWindow::ListActivityWindow(QWidget *parent, QDate date, Register *r)
         QVBoxLayout *vbox;
         QPushButton *buttonDelete;
         QString stringDate, stringStartTime, stringEndTime;
-        QLabel *labelDate, *labelStartTime, *labelEndTime, *labelDescription;
+        QLabel *labelStartTime, *labelEndTime, *labelDescription;
 
         int i = 0;
         for (const auto it : r->getActivities()) {
 
+            if(it.first == date) {
+                groupBox = new QGroupBox(it.second->getTitle()); //titolo
+                groupBox->setStyleSheet("QGroupBox{ font: 11pt 'Arial' bold;  }");
 
-            groupBox = new QGroupBox(it.second->getTitle()); //titolo
-            groupBox->setStyleSheet("QGroupBox{ font: 11pt 'Arial' bold;  }");
+                vbox = new QVBoxLayout;
 
-            vbox = new QVBoxLayout;
+                //label ora di inizio
+                stringStartTime = "Starting time: ";
+                stringStartTime += QString(it.second->getStartTime().toString("hh:mm"));
+                labelStartTime = new QLabel(stringStartTime);
+                labelStartTime->setFont(fontLabel);
+                vbox->addWidget(labelStartTime);
 
-            //label Date
-            stringDate = "Date: ";
-            stringDate += QString(it.second->getDate().toString("dd/MM/yyyy"));
-            labelDate = new QLabel(stringDate);
-            labelDate->setFont(fontLabel);
-            vbox->addWidget(labelDate);
+                //label ora di fine
+                stringEndTime = "End time: ";
+                stringEndTime += QString(it.second->getEndTime().toString("hh:mm"));
+                labelEndTime = new QLabel(stringEndTime);
+                labelEndTime->setFont(fontLabel);
+                vbox->addWidget(labelEndTime);
 
-            //label ora di inizio
-            stringStartTime = "Starting time: ";
-            stringStartTime += QString(it.second->getStartTime().toString("hh:mm"));
-            labelStartTime = new QLabel(stringStartTime);
-            labelStartTime->setFont(fontLabel);
-            vbox->addWidget(labelStartTime);
+                //label descrizione
+                labelDescription = new QLabel("Description:\n" + it.second->getDescription());
+                labelDescription->setWordWrap(true);
+                labelDescription->setMaximumWidth(412);
+                labelDescription->setFont(fontLabel);
+                vbox->addWidget(labelDescription);
 
-            //label ora di fine
-            stringEndTime = "End time: ";
-            stringEndTime += QString(it.second->getEndTime().toString("hh:mm"));
-            labelEndTime = new QLabel(stringEndTime);
-            labelEndTime->setFont(fontLabel);
-            vbox->addWidget(labelEndTime);
+                //button delete
+                buttonDelete = new QPushButton((QIcon("../image/deleteActivity.png")), "");
+                buttonDelete->setFixedSize(32, 32);
+                connect(buttonDelete, &QPushButton::clicked, this, [this, groupBox, r, it, date]() {
+                    r->deleteActivity(it.second);
 
-            //label descrizione
-            labelDescription = new QLabel(it.second->getDescription());
-            labelDescription->setWordWrap(true);
-            labelDescription->setMaximumWidth(412);
-            labelDescription->setFont(fontLabel);
-            vbox->addWidget(labelDescription);
+                    delete groupBox;
+                    if (r->getActivities().find(date) == r->getActivities().end()) {
+                        delete this->scrollAreaListActivity;
+                        this->createEmptyLabel();
+                    }
 
-            //button delete
-            buttonDelete = new QPushButton((QIcon("../image/deleteActivity.png")), "");
-            buttonDelete->setFixedSize(32, 32);
-            connect(buttonDelete, &QPushButton::clicked, this, [this, groupBox, r, it]() {
-                r->deleteActivity(it.second);
-                std::cout << r->getActivities().size() << std::endl;
-                delete groupBox;
-                if(r->isEmpty())
-                    delete this->scrollAreaListActivity;
+                });
+                vbox->addWidget(buttonDelete);
 
-            });
-            vbox->addWidget(buttonDelete);
+                groupBox->setLayout(vbox);
 
-            groupBox->setLayout(vbox);
-
-            gridLayout->addWidget(groupBox, i++,0);
+                gridLayout->addWidget(groupBox, i++, 0);
+            }//fine if
 
         } //fine for
         scrollAreaListActivity->setWidget(qWidget);
@@ -127,7 +111,7 @@ ListActivityWindow::~ListActivityWindow() {
 }
 
 void ListActivityWindow::createEmptyLabel() {
-    std::cout << "Vuoto" << std::endl;
+
     QLabel *empty = new QLabel("There aren't activities for this date.", this);
     QFont fontEmpty("Arial", 12, QFont::Bold);
     empty->setFont(fontEmpty);

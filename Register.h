@@ -6,7 +6,7 @@
 #define ACTIVITYTRACKER_REGISTER_H
 
 #include <map>
-#include <ostream>
+#include <iostream>
 
 #include "Activity.h"
 
