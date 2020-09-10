@@ -21,6 +21,7 @@ public:
     bool isEmpty();
     bool isNotActivity(const QDate &date);
     int numActivity();
+    int numActivityDate(const QDate& date);
     const std::multimap<QDate, Activity> &getActivities() const;
 
 private:

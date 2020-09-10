@@ -73,3 +73,18 @@ TEST(TestRegister, testRegisterDeleteNotOk){
     ASSERT_FALSE(r.isEmpty());
     ASSERT_EQ(2, r.numActivity());
 }
+
+TEST(TestRegister, testRegisterActivityDate) {
+    Register r;
+
+    Activity a1("Titolo1", "Descrizione1" ,QDate(2020,8,2), QTime(12,00), QTime(13,00));
+    Activity a2("Titolo2", "Descrizione2" ,QDate(2020,7,2), QTime(12,00), QTime(13,00));
+    Activity a3("Titolo3", "Descrizione3" ,QDate(2020,7,2), QTime(12,00), QTime(13,00));
+
+    r.addActivity(a1);
+    r.addActivity(a2);
+    r.addActivity(a3);
+
+    ASSERT_EQ(2,r.numActivityDate(QDate(2020,7,2)));
+    ASSERT_EQ(1, r.numActivityDate(QDate(2020,8,2)));
+}

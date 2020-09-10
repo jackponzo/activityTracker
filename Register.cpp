@@ -51,4 +51,12 @@ bool Register::isEmpty() {
     return false;
 }
 
+int Register::numActivityDate(const QDate &date) {
+    int num = 0;
+    for(auto it : activities)
+        if(it.first ==date)
+            num++;
+    return num;
+}
+
 
