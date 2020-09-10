@@ -40,6 +40,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
 
 MainWindow::~MainWindow()
 {
+    delete aRegister;
     delete calendar;
     delete buttonNewActivity;
     delete labelActivityTracker;

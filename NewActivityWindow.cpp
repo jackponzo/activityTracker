@@ -103,7 +103,7 @@ NewActivityWindow::NewActivityWindow(QWidget *parent, Register *r) : QDialog(par
     buttonOk->move(450,575);
     connect(buttonOk, &QPushButton::clicked, this, [r, this](){
         if(this->activityIsOk(dateEditNewActivity, timeEditStartTime, timeEditEndTime, lineEditTitleActivity, textEditDescriptionActivity)){
-            Activity *a = new Activity(lineEditTitleActivity->text(), textEditDescriptionActivity->toPlainText(), dateEditNewActivity->date(), timeEditStartTime->time(), timeEditEndTime->time());
+            Activity a(lineEditTitleActivity->text(), textEditDescriptionActivity->toPlainText(), dateEditNewActivity->date(), timeEditStartTime->time(), timeEditEndTime->time());
 
             r->addActivity(a);
             this->close();

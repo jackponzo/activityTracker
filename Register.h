@@ -16,15 +16,15 @@ public:
     Register();
     ~Register();
 
-    void addActivity(Activity* a);
-    void deleteActivity(Activity* a);
+    void addActivity(const Activity& a);
+    bool deleteActivity(const Activity& a);
     bool isEmpty();
-
-    const std::multimap<QDate, Activity *> &getActivities() const;
-    void setActivities(const std::multimap<QDate, Activity *> &activities);
+    bool isNotActivity(const QDate &date);
+    int numActivity();
+    const std::multimap<QDate, Activity> &getActivities() const;
 
 private:
-    std::multimap<QDate, Activity*> activities;
+    std::multimap<QDate, Activity> activities;
 };
 
 

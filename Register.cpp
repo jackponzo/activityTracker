@@ -12,36 +12,43 @@ Register::~Register() {
 
 }
 
-void Register::addActivity(Activity* a) {
-    activities.insert(std::pair<QDate, Activity*>(a->getDate(), a));
+void Register::addActivity(const Activity& a) {
+    activities.insert(std::pair<QDate, Activity>(a.getDate(), a));
 }
 
-void Register::deleteActivity(Activity* ac) {
+bool Register::deleteActivity(const Activity& a) {
 
-    typedef std::multimap<QDate, Activity*>::iterator iterator;
-    std::pair<iterator, iterator> iterpair = activities.equal_range(ac->getDate());
+    typedef std::multimap<QDate, Activity>::iterator iterator;
+    std::pair<iterator, iterator> iterpair = activities.equal_range(a.getDate());
 
     iterator it = iterpair.first;
     for (; it != iterpair.second; ++it) {
-        if (it->second == ac) {
+        if (it->second == a) {
             activities.erase(it);
-            break;
+            return true;
         }
     }
+    return false;
+}
+
+bool Register::isNotActivity(const QDate &date) {
+    if(activities.find(date) == activities.end())
+        return true;
+    return false;
+}
+
+const std::multimap<QDate, Activity> &Register::getActivities() const {
+    return activities;
+}
+
+int Register::numActivity() {
+    return activities.size();
 }
 
 bool Register::isEmpty() {
     if(activities.empty())
         return true;
     return false;
-}
-
-const std::multimap<QDate, Activity *> &Register::getActivities() const {
-    return activities;
-}
-
-void Register::setActivities(const std::multimap<QDate, Activity *> &activities) {
-    Register::activities = activities;
 }
 
 

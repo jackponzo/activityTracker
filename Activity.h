@@ -14,7 +14,7 @@ class Activity {
 public:
 
     Activity(QString t, QString d, QDate da, QTime sT, QTime eT);
-    ~Activity();
+    ~Activity() {}
 
     const QString &getTitle() const;
     void setTitle(const QString &title);

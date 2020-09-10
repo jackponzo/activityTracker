@@ -28,7 +28,7 @@ ListActivityWindow::ListActivityWindow(QWidget *parent, QDate date, Register *r)
     QFont fontLabel("Arial", 10);
     QFont fontTitle("Arial", 11, QFont::Bold);
 
-    if(r->getActivities().find(date) == r->getActivities().end()){ //se non ci sono attività
+    if(r->isNotActivity(date)){ //se non ci sono attività
         createEmptyLabel();
     }else {
 
@@ -50,30 +50,30 @@ ListActivityWindow::ListActivityWindow(QWidget *parent, QDate date, Register *r)
         QLabel *labelStartTime, *labelEndTime, *labelDescription;
 
         int i = 0;
-        for (const auto it : r->getActivities()) {
+        for (auto it : r->getActivities()) {
 
             if(it.first == date) {
-                groupBox = new QGroupBox(it.second->getTitle()); //titolo
+                groupBox = new QGroupBox(it.second.getTitle()); //titolo
                 groupBox->setStyleSheet("QGroupBox{ font: 11pt 'Arial' bold;  }");
 
                 vbox = new QVBoxLayout;
 
                 //label ora di inizio
                 stringStartTime = "Starting time: ";
-                stringStartTime += QString(it.second->getStartTime().toString("hh:mm"));
+                stringStartTime += QString(it.second.getStartTime().toString("hh:mm"));
                 labelStartTime = new QLabel(stringStartTime);
                 labelStartTime->setFont(fontLabel);
                 vbox->addWidget(labelStartTime);
 
                 //label ora di fine
                 stringEndTime = "End time: ";
-                stringEndTime += QString(it.second->getEndTime().toString("hh:mm"));
+                stringEndTime += QString(it.second.getEndTime().toString("hh:mm"));
                 labelEndTime = new QLabel(stringEndTime);
                 labelEndTime->setFont(fontLabel);
                 vbox->addWidget(labelEndTime);
 
                 //label descrizione
-                labelDescription = new QLabel("Description:\n" + it.second->getDescription());
+                labelDescription = new QLabel("Description:\n" + it.second.getDescription());
                 labelDescription->setWordWrap(true);
                 labelDescription->setMaximumWidth(412);
                 labelDescription->setFont(fontLabel);
@@ -84,9 +84,8 @@ ListActivityWindow::ListActivityWindow(QWidget *parent, QDate date, Register *r)
                 buttonDelete->setFixedSize(32, 32);
                 connect(buttonDelete, &QPushButton::clicked, this, [this, groupBox, r, it, date]() {
                     r->deleteActivity(it.second);
-
                     delete groupBox;
-                    if (r->getActivities().find(date) == r->getActivities().end()) {
+                    if (r->isNotActivity(date)) {
                         delete this->scrollAreaListActivity;
                         this->createEmptyLabel();
                     }
