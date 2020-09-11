@@ -32,6 +32,7 @@ bool Register::deleteActivity(const Activity& a) {
 }
 
 bool Register::isNotActivity(const QDate &date) {
+
     if(this->numActivityDate(date) == 0)
         return true;
     return false;
@@ -52,11 +53,7 @@ bool Register::isEmpty() {
 }
 
 int Register::numActivityDate(const QDate &date) {
-    int num = 0;
-    for(auto it : activities)
-        if(it.first ==date)
-            num++;
-    return num;
+    return activities.count(date);
 }
 
 
